@@ -7,6 +7,9 @@ namespace Brotinho
         GameManager manager;
         readonly List<SpriteRenderer> tiles = new List<SpriteRenderer>();
         readonly List<SpriteRenderer> crops = new List<SpriteRenderer>();
+        readonly List<SpriteRenderer> buildings = new List<SpriteRenderer>();
+        readonly List<AnimalBehavior> animals = new List<AnimalBehavior>();
+        SpriteRenderer ghost;
         public void Initialize(GameManager manager)
         {
             this.manager = manager;
@@ -14,6 +17,7 @@ namespace Brotinho
             {
                 var tile = Make("Tile", transform); tile.transform.position = new Vector3(x, y, 0); tile.sortingOrder = -100; tiles.Add(tile);
             }
+            ghost = Make("PlacementPreview", transform); ghost.sortingOrder = 100;
             manager.Game.Bus.Changed += Refresh; Refresh();
         }
         SpriteRenderer Make(string name, Transform parent)
@@ -44,9 +48,32 @@ namespace Brotinho
                 Fit(view, manager.Art.Get("crop_" + crop.definition + "_" + stage.ToString().ToLowerInvariant() + "_01"), .9f);
                 view.transform.position = new Vector3(crop.x, crop.y, 0); view.sortingOrder = 50 - crop.y;
             }
+            while (buildings.Count < game.State.buildings.Count) buildings.Add(Make("Building", transform));
+            for (int i = 0; i < buildings.Count; i++)
+            {
+                var view = buildings[i]; view.gameObject.SetActive(i < game.State.buildings.Count); if (!view.gameObject.activeSelf) continue;
+                var b = game.State.buildings[i]; var size = PlacementValidator.Size(game.Data.Building(b.definition), b.rotation);
+                bool night = TimeManager.Hour(game.State.elapsed) < 6 || TimeManager.Hour(game.State.elapsed) >= 18;
+                Fit(view, manager.Art.Get("building_" + b.definition + (night ? "_night" : "_day")), size.x);
+                view.transform.position = new Vector3(b.x + (size.x - 1) / 2f, b.y + (size.y - 1) / 2f, 0); view.sortingOrder = 40 - b.y;
+                view.transform.localRotation = Quaternion.Euler(0, 0, b.rotation * 90);
+            }
+            while (animals.Count < game.State.animals.Count)
+            {
+                var view = Make("Animal", transform); var behavior = view.gameObject.AddComponent<AnimalBehavior>(); behavior.Bind(manager, game.State.animals[animals.Count]); animals.Add(behavior);
+            }
         }
         void Update()
         {
+            ghost.gameObject.SetActive(manager.Placement != null);
+            if (manager.Placement != null)
+            {
+                var data = manager.Game.Data.Building(manager.Placement); var size = PlacementValidator.Size(data, manager.Rotation);
+                Fit(ghost, manager.Art.Get("building_" + data.id + "_day"), size.x);
+                var tile = manager.PlacementTile; ghost.transform.position = new Vector3(tile.x + (size.x - 1) / 2f, tile.y + (size.y - 1) / 2f, 0);
+                ghost.transform.rotation = Quaternion.Euler(0, 0, manager.Rotation * 90);
+                ghost.color = PlacementValidator.CanPlace(manager.Game.Grid, manager.Game.Data, data, tile.x, tile.y, manager.Rotation) ? new Color(.4f, 1, .4f, .7f) : new Color(1, .3f, .3f, .7f);
+            }
             for (int i = 0; i < crops.Count; i++) if (crops[i].gameObject.activeSelf)
             {
                 var crop = manager.Game.State.crops[i]; bool ready = crop.Ready(manager.Game.Data.Crop(crop.definition));

@@ -14,3 +14,8 @@ Environment: Windows 11, Unity 6 LTS 6000.3.27f1. Baseline: empty repository, no
 
 - `Tools/Validate.ps1 -Mode EditMode`: Unity compilation succeeded; 16 passed, 0 failed, 0 skipped.
 - New cases cover atomic purchasing/harvest capacity, apple regrowth, sell-all equivalence, bounded market multipliers, pressure recovery, one-time order rewards, expansion adjacency/cost and repeat-claim rejection.
+
+## v0.3.0
+
+- `Tools/Validate.ps1 -Mode EditMode`: Unity compilation succeeded; 22 passed, 0 failed, 0 skipped.
+- New cases prove housing restrictions and discounts, exact undo refunds, hunger pause/feed consumption, fractional regional yields, reserved processing inputs, full output blocking and water-wheel acceleration.

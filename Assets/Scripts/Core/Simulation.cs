@@ -19,6 +19,8 @@ namespace Brotinho
                 AchievementManager.RefreshDaily(state);
                 bool rain = WeatherSystem.At(state.elapsed) == WeatherKind.Rain;
                 foreach (var crop in state.crops) CropGrowthController.Advance(crop, game.Data.Crop(crop.definition), state.region, state.elapsed, 1, rain);
+                foreach (var animal in state.animals) ProductionController.Tick(game, animal);
+                foreach (var building in state.buildings) ProcessingBuilding.Tick(game, building);
                 state.elapsed++;
                 OrderManager.Refresh(game);
             }

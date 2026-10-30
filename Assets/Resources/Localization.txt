@@ -44,3 +44,38 @@ not_enough_coins	Moedas insuficientes.	Not enough coins.
 empty_input	Faltam ingredientes ou itens.	Missing ingredients or items.
 order_expired	Este pedido expirou.	This order has expired.
 order_complete	Pedido entregue!	Order completed!
+build	Construir	Build
+animals	Animais	Animals
+processing	Produção	Processing
+confirm	Confirmar	Confirm
+cancel	Cancelar	Cancel
+rotate	Girar	Rotate
+feed	Alimentar	Feed
+collect	Coletar	Collect
+queue	Fila	Queue
+queue_full	A fila está cheia.	The queue is full.
+needs_housing	Construa um abrigo livre primeiro.	Build an empty animal house first.
+undo_unavailable	Esta construção já está em uso.	This building is already in use.
+building_chicken_coop	Galinheiro	Chicken coop
+building_barn	Celeiro	Barn
+building_hutch	Coelheira	Hutch
+building_mill	Moinho	Mill
+building_bakery	Padaria	Bakery
+building_dairy	Laticínio	Dairy
+building_kitchen	Cozinha	Kitchen
+building_market_stall	Banca de mercado	Market stall
+building_water_wheel	Roda d'água	Water wheel
+building_storage_shed	Depósito	Storage shed
+building_wood_workshop	Oficina de madeira	Wood workshop
+building_fence	Cerca	Fence
+animal_chicken	Galinha	Chicken
+animal_cow	Vaca	Cow
+animal_rabbit	Coelho	Rabbit
+product_egg	Ovo	Egg
+product_milk	Leite	Milk
+product_wool	Lã	Wool
+product_flour	Farinha	Flour
+product_bread	Pão	Bread
+product_cheese	Queijo	Cheese
+product_jam	Geleia	Jam
+product_wood	Madeira	Wood

@@ -84,7 +84,9 @@ namespace Brotinho
             { var id = crop.id; Button(cropRow, L("crop_" + id), () => { manager.SelectedCrop = id; manager.Tool = PlayerTool.Plant; ShowToast("plant"); }); }
             var toolRow = QuickRow(bottom);
             Button(toolRow, L("water"), () => manager.Tool = PlayerTool.Water); Button(toolRow, L("harvest"), () => manager.Tool = PlayerTool.Harvest);
-            var menus = QuickRow(bottom); foreach (string id in new[] { "shop", "inventory", "sell" }) { string target = id; Button(menus, L(id), () => Open(target)); }
+            var menus = QuickRow(bottom); foreach (string id in new[] { "build", "shop", "inventory", "animals", "processing" }) { string target = id; Button(menus, L(id), () => Open(target)); }
+            Button(toolRow, L("confirm"), () => { if (manager.Placement != null && ConstructionService.Place(manager.Game, manager.Placement, manager.PlacementTile.x, manager.PlacementTile.y, manager.Rotation)) manager.Placement = null; });
+            Button(toolRow, L("rotate"), () => manager.Rotation = (manager.Rotation + 1) % 4); Button(toolRow, L("cancel"), () => manager.Placement = null);
         }
         RectTransform QuickRow(Transform parent)
         {
@@ -110,6 +112,14 @@ namespace Brotinho
                 Button(modal, L(game.Data.Crop(id) != null ? "crop_" + id : "product_" + id) + " ×" + game.State.Count(id) + " · " + L("sell_all") + " " + PriceTable.Quote(game, id, game.State.Count(id)), () => { SellManager.Sell(game, id, game.State.Count(id)); Open(panel); });
             }
             if (panel == "orders") foreach (var order in game.State.orders) { string id = order.id; Button(modal, L("crop_" + order.product) + " ×" + order.quantity + " → " + order.reward + " " + L("coins"), () => { OrderManager.Complete(game, id); Open(panel); }); }
+            if (panel == "build") foreach (var b in game.Data.buildings) { string id = b.id; Button(modal, L("building_" + id) + " · " + ConstructionService.Cost(game, b), () => { manager.Placement = id; Destroy(modal.gameObject); ModalOpen = false; }); }
+            if (panel == "animals")
+            {
+                foreach (var a in game.Data.animals) { string id = a.id; Button(modal, L("animal_" + id) + " · " + a.cost, () => { ProductionController.Buy(game, id); Open(panel); }); }
+                foreach (var a in game.State.animals) { var animal = a; Button(modal, L("feed") + " · " + a.feed, () => ProductionController.Feed(game, animal)); Button(modal, L("collect") + " · " + a.ready, () => ProductionController.Collect(game, animal)); }
+            }
+            if (panel == "processing") foreach (var b in game.State.buildings) if (game.Data.Building(b.definition).processSeconds > 0)
+            { var building = b; Button(modal, L("building_" + b.definition) + " · " + L("queue") + " " + b.queue, () => ProcessingBuilding.Enqueue(game, building)); Button(modal, L("collect"), () => ProcessingBuilding.Collect(game, building)); }
             modal.GetComponent<PanelBase>().Open();
         }
         void ShowToast(string key) { if (toast == null) return; toast.text = L(key); toastUntil = Time.unscaledTime + 2.5f; }

@@ -10,7 +10,7 @@ The Editor menu **Brotinho > Build foundation assets and scenes** regenerates de
 
 ## Current milestone
 
-Current implementation: v0.5.0 — full UI panel shell, portrait navigation, player movement, lighting and audio hooks. Remaining milestone: v0.6 save/recovery, localization and tutorial validation.
+Current implementation: v0.6.0 — the complete playable foundation, including save/recovery, Portuguese/English localization and the six-step tutorial. Target-device builds, signing and profiling are separate release-validation work; see `Docs/VALIDATION.md` for exact evidence.
 
 ## Assets
 
@@ -21,6 +21,10 @@ All 21 supplied JPEGs live unchanged in `Assets/Art/Source`. No source filenames
 ## Validation
 
 Open Window > General > Test Runner and run EditMode and PlayMode suites. See `Docs/TEST_CHECKLIST.md` for feature checks and `Docs/SETUP.md` for scenes, data, prefabs and mobile configuration. Device performance, Android signing and iOS signing must be checked on actual target hardware before release.
+
+Final automated result: **42 EditMode + 5 PlayMode tests passed**. PlayMode tests isolate player saves before resetting test sessions. Android module installation was blocked by Windows administrator permissions; no APK or iOS build is claimed. See `Docs/VALIDATION.md` for exact evidence and remaining checks.
+
+`Docs/SOURCE_CODE.md` contains the complete C# code, file by file. Regenerate it with `Tools/ExportSource.ps1`. The normal source files remain under `Assets/Scripts`, `Assets/Editor` and `Assets/Tests`.
 
 ## Version control
 

@@ -201,7 +201,7 @@ namespace Brotinho.Editor
             }
             foreach (string b in new[] { "hutch", "bakery", "dairy", "kitchen", "market_stall", "water_wheel", "storage_shed", "wood_workshop", "fence" })
                 foreach (string time in new[] { "day", "night" }) Require("building_" + b + "_" + time, library.fallback);
-            foreach (string icon in new[] { "workers", "orders", "expansion", "achievement", "notifications", "feed", "collect", "move" }) Require("icon_" + icon, library.fallback);
+            foreach (string icon in new[] { "workers", "orders", "expansion", "achievement", "notifications", "feed", "collect", "move", "wood" }) Require("icon_" + icon, library.fallback);
             library.entries = art.ToArray(); Save(library, Root + "SpriteLibrary.asset");
             foreach (string group in new[] { "Crops", "Animals", "UI" })
             {

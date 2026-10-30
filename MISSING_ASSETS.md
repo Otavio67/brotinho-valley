@@ -26,6 +26,7 @@ The 21 supplied JPEG sources are preserved without renames. Transparent PNG deri
 - `icon_feed.png`
 - `icon_collect.png`
 - `icon_move.png`
+- `icon_wood.png`
 
 ## Audio (silence until supplied)
 

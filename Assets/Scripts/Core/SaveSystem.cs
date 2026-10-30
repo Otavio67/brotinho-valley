@@ -7,23 +7,25 @@ namespace Brotinho
     {
         public const int CurrentVersion = 1;
         readonly string path;
+        readonly Func<GameState, bool> validator;
+        bool recovered;
         public bool WriteBlocked { get; private set; }
         public string LastError { get; private set; }
-        public SaveSystem(string directory) { path = Path.Combine(directory, "brotinho-save.json"); }
+        public SaveSystem(string directory, Func<GameState, bool> validator = null) { path = Path.Combine(directory, "brotinho-save.json"); this.validator = validator; }
         public bool Exists => File.Exists(path) || File.Exists(path + ".bak");
         public GameState Load()
         {
-            WriteBlocked = false; LastError = null;
+            WriteBlocked = false; LastError = null; recovered = false;
             if (!Exists) return GameState.New();
             // A future-version primary is never silently replaced by an older backup.
             try { return Read(path); }
             catch (FutureSaveException) { WriteBlocked = true; LastError = "save_newer_version"; return GameState.New(); }
             catch (Exception e) when (e is IOException || e is ArgumentException || e is InvalidDataException || e is UnauthorizedAccessException) { LastError = "save_recovered"; }
-            try { return Read(path + ".bak"); }
+            try { var state = Read(path + ".bak"); recovered = true; return state; }
             catch (FutureSaveException) { WriteBlocked = true; LastError = "save_newer_version"; return GameState.New(); }
             catch (Exception) { WriteBlocked = true; LastError = "save_corrupt"; return GameState.New(); }
         }
-        static GameState Read(string file)
+        GameState Read(string file)
         {
             string json = File.ReadAllText(file);
             // JsonUtility otherwise silently supplies defaults for arbitrary objects.
@@ -33,6 +35,7 @@ namespace Brotinho
             if (state.version > CurrentVersion) throw new FutureSaveException();
             // Version 0 migrations deliberately keep the initial game schema.
             if (state.version < 0 || state.inventory == null || state.crops == null || state.buildings == null || state.animals == null || state.workers == null || state.orders == null || state.land == null || state.market == null || state.claimedAchievements == null || state.dailyClaimed == null || state.coins < 0 || state.gems < 0 || state.xp < 0 || double.IsNaN(state.elapsed) || double.IsInfinity(state.elapsed) || state.elapsed < 0 || state.tickRemainder < 0 || state.tickRemainder >= 1) throw new InvalidDataException("Invalid game state.");
+            if (!SaveStateValidator.Basic(state) || validator != null && !validator(state)) throw new InvalidDataException("Invalid saved entities.");
             state.version = CurrentVersion; return state;
         }
         public bool Save(GameState state, long utcNow)
@@ -44,7 +47,8 @@ namespace Brotinho
                 string temp = path + ".tmp"; File.WriteAllText(temp, JsonUtility.ToJson(state, true));
                 // Validate before rotating, keeping the previous primary as a recovery point.
                 Read(temp);
-                if (File.Exists(path)) File.Replace(temp, path, path + ".bak"); else File.Move(temp, path);
+                if (File.Exists(path)) File.Replace(temp, path, recovered ? null : path + ".bak"); else File.Move(temp, path);
+                recovered = false;
                 LastError = null; return true;
             }
             catch (Exception e) when (e is IOException || e is UnauthorizedAccessException || e is ArgumentException || e is InvalidDataException)

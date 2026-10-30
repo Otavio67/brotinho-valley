@@ -6,7 +6,7 @@ namespace Brotinho
         public static double DailyMultiplier(string product, int day)
         {
             uint hash = 2166136261; foreach (char c in product) hash = (hash ^ c) * 16777619;
-            hash = (hash ^ (uint)day) * 16777619; return .8 + hash % 401 / 1000.0;
+            hash = (hash ^ (uint)day) * 16777619; return (800 + hash % 401) / 1000.0;
         }
         public static double Pressure(GameState state, string product)
         {

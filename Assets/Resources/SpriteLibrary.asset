@@ -664,3 +664,5 @@ MonoBehaviour:
     sprite: {fileID: 0}
   - name: icon_move
     sprite: {fileID: 0}
+  - name: icon_wood
+    sprite: {fileID: 0}

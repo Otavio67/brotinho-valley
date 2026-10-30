@@ -32,3 +32,23 @@ Environment: Windows 11, Unity 6 LTS 6000.3.27f1. Baseline: empty repository, no
 - Actual 1080×1920 URP captures were visually inspected: `TestResults/Preview-Farm.png` and `Preview-Title.png`.
 - Visual QA caught missing TMP resources and atlas-name collisions that compilation alone did not catch. Essential resources now finish importing through the supported callback before batch exit; all atlases have unique names. Screens render legible text and the intended sprites.
 - All 21 original files match the user-provided source SHA-256 byte-for-byte; hashes are in `Docs/SOURCE_ASSETS.json`.
+
+## v0.6.0 — final result
+
+**Unity foundation ready with documented platform limitations.**
+
+- Unity 6000.3.27f1 runtime/editor/test assemblies compile with no C# errors.
+- `Tools/Validate.ps1 -Mode EditMode`: **42 passed, 0 failed, 0 skipped**.
+- `Tools/Validate.ps1 -Mode PlayMode`: **5 passed, 0 failed, 0 skipped**.
+- New coverage includes JSON round trips with queues/energy/settings/fractions, corrupt-primary recovery while retaining the good backup, future-version write protection, explicit reset, v0 migration, invalid inventory rejection, both languages, ordered tutorial advancement, one-time avatar purchases, crop boosts, literal/definition localization keys, PNG alpha and sprite alias identity.
+- PlayMode tests are isolated through the test-runner setup/cleanup environment marker and a batch-run guard. They assert isolation before reset and never write a real player save. Save tests create and remove their own unique OS-temp directory.
+- The final portrait farm/title captures were rendered through the URP render-request API. Transparent crops, farmer, animal and building art render correctly. Missing construction/icon assets emit expected one-time fallback warnings.
+- The source archive contains 21 untouched originals and 57 transparent derivative PNGs. `MISSING_ASSETS.md` lists 23 sprite filenames (18 building state files and 5 icons), plus 14 SFX and 2 music tracks.
+
+### Platform evidence and limits
+
+Android Build Support installation was attempted for this exact LTS Editor. The first attempt returned `ELEVATION_CANCELLED` (the Windows elevation prompt was cancelled or timed out). The documented `--no-elevate` retry returned `ELEVATION_REQUIRED`: installation under `C:\Program Files\Unity\Hub\Editor\6000.3.27f1` needs administrator permission. No APK was generated. These are Windows installer permission errors, not C# build failures.
+
+The reproducible build entry point is `Brotinho.Editor.MobileBuild.Android`: four scenes, portrait, ARM64, IL2CPP, minimum Android API 26, development APK at `Builds/Android/BrotinhoValley-debug.apk`. Run it after installing Android Build Support and its SDK/NDK/OpenJDK for 6000.3.27f1.
+
+iOS compilation/signing requires the corresponding module and a macOS/Xcode environment; it was not run. No Android/iOS device was connected, so touch gestures, safe-area behavior on physical notches, pause/resume under the OS, signing, battery usage and measured 60 FPS are **not verified**. The project is a base for device validation, not a store-release certification.

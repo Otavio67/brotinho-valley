@@ -14,6 +14,7 @@ namespace Brotinho
         TextMeshProUGUI hud, toast;
         TextMeshProUGUI objective, placementHint;
         RectTransform placementControls;
+        string shownPlacement;
         string scene, currentPanel;
         float toastUntil;
         TMP_FontAsset font;
@@ -127,7 +128,7 @@ namespace Brotinho
             if (placementControls != null)
             {
                 placementControls.gameObject.SetActive(manager.Placement != null);
-                if (manager.Placement != null) placementHint.text = L("building_" + manager.Placement) + " · " + L("build_hint");
+                if (manager.Placement != shownPlacement) { shownPlacement = manager.Placement; if (shownPlacement != null) placementHint.text = L("building_" + shownPlacement) + " · " + L("build_hint"); }
             }
         }
         void OnDestroy()

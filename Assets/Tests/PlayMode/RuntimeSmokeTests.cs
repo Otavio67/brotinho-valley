@@ -8,11 +8,19 @@ using UnityEngine.SceneManagement;
 using UnityEngine.TestTools;
 namespace Brotinho.Tests
 {
+    public sealed class RuntimeTestIsolation : IPrebuildSetup, IPostBuildCleanup
+    {
+        public void Setup() => System.Environment.SetEnvironmentVariable("BROTINHO_TEST_MODE", "1");
+        public void Cleanup() => System.Environment.SetEnvironmentVariable("BROTINHO_TEST_MODE", null);
+    }
+    [PrebuildSetup(typeof(RuntimeTestIsolation))]
+    [PostBuildCleanup(typeof(RuntimeTestIsolation))]
     public class RuntimeSmokeTests
     {
         [UnitySetUp] public IEnumerator Setup()
         {
             if (GameManager.Instance == null) new GameObject("GameManager").AddComponent<GameManager>();
+            Assert.That(GameManager.Instance.IsTestSession, Is.True, "Tests must never reset or save a real player session.");
             GameManager.Instance.ResetGame(); yield return null;
             GameManager.Instance.ChooseRegion("meadow"); yield return null; yield return null;
             Assert.That(Resources.Load<TMP_FontAsset>("Fonts & Materials/LiberationSans SDF"), Is.Not.Null, "TMP resources must be imported; invisible text is not a passing UI.");

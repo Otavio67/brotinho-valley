@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.6.0] — 2026-10-30
+
+- Validate versioned JSON round trips, corrupt-save recovery, future-version protection, migration and entity integrity; preserve the good backup when repairing a corrupt primary.
+- Complete the Portuguese/English UI key set and the six-step action-driven tutorial.
+- Add pooled action feedback, complete asset/TODO reports, setup/source documentation and final validation evidence.
+- Add earned-gem avatar purchases and crop boosts with duplicate-charge protection; preserve save isolation in both batch and in-Editor tests.
+- Pass 42 EditMode and 5 PlayMode tests. Record the Windows administrator restriction that blocked Android module installation; device validation remains pending.
+
 ## [0.5.0] — 2026-10-30
 
 - Add the full responsive panel set, scrollable lists, live progress, confirmations, empty/error states, worker task dropdown and zone assignment.

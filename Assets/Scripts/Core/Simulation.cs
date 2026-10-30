@@ -25,9 +25,10 @@ namespace Brotinho
                 state.elapsed++;
                 OrderManager.Refresh(game);
             }
+            AchievementManager.RefreshDaily(state);
             report.harvests = state.harvested - crops; report.production = state.produced - products;
             report.sales = state.sold - sales; report.coins = state.coins - coins;
-            foreach (var animal in state.animals) if (animal.feed == 0) report.Issue("hungry_animals");
+            foreach (var animal in state.animals) { if (animal.feed == 0) report.Issue("hungry_animals"); if (animal.ready >= 10) report.Issue("output_waiting"); }
             foreach (var item in state.inventory) if (item.count >= state.Capacity) report.Issue("storage_full");
             foreach (var building in state.buildings)
             {

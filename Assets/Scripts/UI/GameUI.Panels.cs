@@ -50,7 +50,7 @@ namespace Brotinho
             bindings.Clear(); currentPanel = null; ModalOpen = false;
             if (modal != null) { var closing = modal; closing.GetComponent<PanelBase>().Close(); Destroy(closing.gameObject, .2f); modal = null; }
         }
-        string ItemName(string id) => id.StartsWith("seed_") ? L("seed") + " " + L("crop_" + id.Substring(5)) : manager.Game.Data.Crop(id) != null ? L("crop_" + id) : L("product_" + id);
+        string ItemName(string id) => id.StartsWith("seed_") ? L("seed") + " " + L("crop_" + id.Substring(5)) : L("product_" + id);
         void ShowPanel(string panel)
         {
             ClosePanel(); currentPanel = panel; ModalOpen = true;
@@ -80,7 +80,10 @@ namespace Brotinho
                 case "shop":
                     var tabs = Row(content); foreach (string tab in new[] { "seeds", "animals", "build", "expansion", "storage" }) { string id = tab; Button(tabs, L(id), () => ShowPanel(id == "seeds" ? "shop" : id)); }
                     var seedGrid = Cards(content, game.Data.crops.Length, 210);
-                    foreach (var d in game.Data.crops) { var data = d; var card = Card(seedGrid); Icon(card, "icon_" + d.id, 65); Button(card, L("seed") + " " + L("crop_" + d.id) + " · " + d.seedCost + " " + L("coins"), () => Confirm("buy", () => ShopManager.BuySeeds(game, data.id), "shop")); } break;
+                    foreach (var d in game.Data.crops) { var data = d; var card = Card(seedGrid); Icon(card, "icon_" + d.id, 65); Button(card, L("seed") + " " + L("crop_" + d.id) + " · " + d.seedCost + " " + L("coins"), () => Confirm("buy", () => ShopManager.BuySeeds(game, data.id), "shop")); }
+                    Label(content, L("cosmetics")); var avatarGrid = Cards(content, 5, 210);
+                    for (int a = 1; a < 6; a++) { int avatar = a; var card = Card(avatarGrid); Icon(card, "avatar_" + (a + 1).ToString("00"), 80); Button(card, s.unlockedAvatars.Contains(a) ? L("owned") : game.Data.avatarGemCost + " " + L("gems"), () => Confirm("buy", () => GemShop.UnlockAvatar(game, avatar), "shop")); }
+                    Label(content, L("speedups")); foreach (var crop in s.crops) if (!crop.Ready(game.Data.Crop(crop.definition))) { var c = crop; Button(content, L("boost_crop") + " " + L("crop_" + c.definition) + " (" + c.x + "," + c.y + ") · " + game.Data.speedupGemCost + " " + L("gems"), () => Confirm("boost_crop", () => GemShop.BoostCrop(game, c.id), "shop")); } break;
                 case "storage": Bind(content, () => L("capacity") + " " + s.Capacity + " / " + L("per_type")); Button(content, L("building_storage_shed") + " · 150", () => { manager.Placement = "storage_shed"; ClosePanel(); }); break;
                 case "inventory":
                     Bind(content, () => L("capacity") + " " + s.Capacity + " / " + L("per_type"));
@@ -170,12 +173,12 @@ namespace Brotinho
                 case "profile":
                     Icon(content, "avatar_" + (s.avatar + 1).ToString("00"), 130);
                     Input(content, s.playerName, value => s.playerName = value.Length > 24 ? value.Substring(0, 24) : value);
-                    Button(content, L("avatar") + " " + (s.avatar + 1), () => { s.avatar = (s.avatar + 1) % 6; ShowPanel("profile"); });
+                    Button(content, L("avatar") + " " + (s.avatar + 1), () => { s.avatar = s.unlockedAvatars[(s.unlockedAvatars.IndexOf(s.avatar) + 1) % s.unlockedAvatars.Count]; ShowPanel("profile"); });
                     Bind(content, () => L("level") + " " + LevelSystem.Level(s.xp) + " · " + s.xp + "/" + LevelSystem.NextThreshold(s.xp) + " " + L("xp"));
                     Progress(content, () => s.xp / (float)LevelSystem.NextThreshold(s.xp));
                     Bind(content, () => L("stats") + "\n" + L("harvest") + " " + s.harvested + " · " + L("sales") + " " + s.sold + " · " + L("orders") + " " + s.ordersCompleted); break;
                 case "settings":
-                    Button(content, L("language") + " · " + (s.language == "en" ? "English" : "Português"), () => { s.language = s.language == "en" ? "pt-BR" : "en"; SceneLoader.Load(scene); });
+                    Button(content, L("language") + " · " + L(s.language == "en" ? "language_en" : "language_pt"), () => { s.language = s.language == "en" ? "pt-BR" : "en"; SceneLoader.Load(scene); });
                     Toggle(content, "sound", () => s.sound, v => s.sound = v); Toggle(content, "music", () => s.music, v => s.music = v);
                     Toggle(content, "vibration", () => s.vibration, v => s.vibration = v); Toggle(content, "notifications", () => s.notifications, v => s.notifications = v);
                     Button(content, L("reset_save"), () => Confirm("reset_save", manager.ResetGame, null)); break;
@@ -190,7 +193,7 @@ namespace Brotinho
                     foreach (string issue in report.issues) Label(content, L(issue)); break;
                 case "dialog": Label(content, L("villager_rosa")); Label(content, L("greeting_rosa")); Button(content, L("next"), () => { ShowPanel("orders"); }); Button(content, L("maybe_later"), ClosePanel); break;
                 case "credits": Label(content, L("credits_body")); break;
-                case "error": Label(content, L("save_failed")); Button(content, L("retry"), manager.SaveNow); break;
+                case "error": Label(content, L(manager.SaveError ?? "save_failed")); Button(content, L("retry"), manager.SaveNow); Button(content, L("reset_save"), () => Confirm("reset_save", manager.ResetGame, null)); break;
                 case "debug": BuildDebug(content); break;
             }
         }

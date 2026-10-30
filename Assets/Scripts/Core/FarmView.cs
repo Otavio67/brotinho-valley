@@ -12,6 +12,8 @@ namespace Brotinho
         readonly List<SpriteRenderer> workers = new List<SpriteRenderer>();
         readonly List<SpriteRenderer> locks = new List<SpriteRenderer>();
         SpriteRenderer ghost;
+        string previewDefinition;
+        readonly List<SpriteRenderer> glows = new List<SpriteRenderer>();
         public void Initialize(GameManager manager)
         {
             this.manager = manager;
@@ -47,13 +49,17 @@ namespace Brotinho
                 Fit(view, manager.Art.Get(game.Grid.Water(x, y) ? "tile_water_01" : "tile_grass_01"), .98f);
                 view.color = unlocked ? Color.white : new Color(.42f, .48f, .46f, .65f);
             }
-            while (crops.Count < game.State.crops.Count) crops.Add(Make("Crop", transform));
+            while (crops.Count < game.State.crops.Count)
+            {
+                var cropView = Make("Crop", transform); crops.Add(cropView); var glow = Make("ReadyGlow", cropView.transform); glow.transform.localPosition = Vector3.zero; glow.transform.localScale = Vector3.one * 1.12f; glow.color = new Color(1, .85f, .4f, .35f); glows.Add(glow);
+            }
             for (int i = 0; i < crops.Count; i++)
             {
                 var view = crops[i]; view.gameObject.SetActive(i < game.State.crops.Count); if (!view.gameObject.activeSelf) continue;
                 var crop = game.State.crops[i]; var stage = crop.Stage(game.Data.Crop(crop.definition));
                 Fit(view, manager.Art.Get("crop_" + crop.definition + "_" + stage.ToString().ToLowerInvariant() + "_01"), .9f);
                 view.transform.position = new Vector3(crop.x, crop.y, 0); view.sortingOrder = 50 - crop.y;
+                glows[i].sprite = view.sprite; glows[i].sortingOrder = view.sortingOrder - 1; glows[i].enabled = stage == CropStage.Ready;
             }
             while (buildings.Count < game.State.buildings.Count) buildings.Add(Make("Building", transform));
             for (int i = 0; i < buildings.Count; i++)
@@ -82,7 +88,8 @@ namespace Brotinho
             if (manager.Placement != null)
             {
                 var data = manager.Game.Data.Building(manager.Placement); var size = PlacementValidator.Size(data, manager.Rotation);
-                Fit(ghost, manager.Art.Get("building_" + data.id + "_day"), size.x);
+                if (previewDefinition != data.id) { previewDefinition = data.id; ghost.sprite = manager.Art.Get("building_" + data.id + "_day"); }
+                Fit(ghost, ghost.sprite, size.x);
                 var tile = manager.PlacementTile; ghost.transform.position = new Vector3(tile.x + (size.x - 1) / 2f, tile.y + (size.y - 1) / 2f, 0);
                 ghost.transform.rotation = Quaternion.Euler(0, 0, manager.Rotation * 90);
                 ghost.color = PlacementValidator.CanPlace(manager.Game.Grid, manager.Game.Data, data, tile.x, tile.y, manager.Rotation) ? new Color(.4f, 1, .4f, .7f) : new Color(1, .3f, .3f, .7f);

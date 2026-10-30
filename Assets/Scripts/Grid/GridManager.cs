@@ -16,7 +16,7 @@ namespace Brotinho
             return false;
         }
         public bool Water(int x, int y) => state.region == "riverside" && x == 7 || state.region != "riverside" && x == 1 && y % 3 != 0;
-        public CropInstance Crop(int x, int y) => state.crops.Find(c => c.x == x && c.y == y);
+        public CropInstance Crop(int x, int y) { foreach (var crop in state.crops) if (crop.x == x && crop.y == y) return crop; return null; }
         public BuildingInstance Building(int x, int y, GameDatabase data)
         {
             foreach (var b in state.buildings)

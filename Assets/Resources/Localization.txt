@@ -205,3 +205,14 @@ tutorial_3	Dê um lar a uma galinha: construa um galinheiro.	Give a chicken a ho
 tutorial_4	Contrate seu primeiro ajudante.	Hire your first helper.
 tutorial_5	Entregue um pedido de um vizinho.	Complete a neighbor's order.
 tutorial_6	Sua fazenda está florescendo. Aproveite o vale!	Your farm is blooming. Enjoy the valley!
+product_lettuce	Alface	Lettuce
+product_carrot	Cenoura	Carrot
+product_wheat	Trigo	Wheat
+product_apple	Maçã	Apple
+cosmetics	Avatares do vale	Valley avatars
+owned	Já é seu	Owned
+speedups	Um empurrãozinho nas plantas	A little crop boost
+boost_crop	Concluir crescimento de	Finish growing
+not_enough_gems	Você precisa de mais gemas. Ganhe em conquistas e desafios.	You need more gems. Earn them through achievements and challenges.
+language_en	Inglês	English
+language_pt	Português	Portuguese

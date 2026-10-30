@@ -12,7 +12,7 @@ namespace Brotinho
             if (!state.Add(data.product, data.yield)) return game.Fail("storage_full");
             state.harvested += data.yield;
             if (data.regrowSeconds > 0) { crop.growth = 0; crop.regrowing = true; } else state.crops.Remove(crop);
-            game.AddXp(10); game.Bus.Play(SfxEvent.Harvest); game.Bus.Notify("harvested"); game.Bus.Refresh(); return true;
+            game.AddXp(10); game.Bus.Play(SfxEvent.Harvest); game.Bus.Emit(x, y, SfxEvent.Harvest); game.Bus.Notify("harvested"); game.Bus.Refresh(); return true;
         }
     }
 }

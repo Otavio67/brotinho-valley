@@ -20,6 +20,7 @@ namespace Brotinho
         public long savedUtc;
         public string playerName = "Brotinho";
         public int avatar;
+        public List<int> unlockedAvatars = new List<int> { 0 };
         public string language = "pt-BR";
         public bool sound = true, music = true, vibration = true, notifications;
         public int playerX = 10, playerY = 10;
@@ -46,7 +47,7 @@ namespace Brotinho
             return s;
         }
         public int Count(string id) { var stack = inventory.Find(x => x.id == id); return stack == null ? 0 : stack.count; }
-        public int Capacity => 50 + buildings.FindAll(x => x.definition == "storage_shed").Count * 50;
+        public int Capacity { get { int total = 50; foreach (var building in buildings) if (building.definition == "storage_shed") total += 50; return total; } }
         public bool CanAdd(string id, int amount) => amount >= 0 && (long)Count(id) + amount <= Capacity;
         public bool Add(string id, int amount)
         {

@@ -21,6 +21,9 @@ namespace Brotinho
         SaveSystem saves;
         double autosave;
         bool suspended, testMode;
+        bool inFarm;
+        public string SaveError => saves.LastError;
+        public bool IsTestSession => testMode;
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         static void StartGame()
         {
@@ -32,9 +35,10 @@ namespace Brotinho
             Instance = this; DontDestroyOnLoad(gameObject);
             Application.targetFrameRate = 60; Application.runInBackground = true;
             Art = Resources.Load<SpriteLibrary>("SpriteLibrary");
-            testMode = Application.isBatchMode && Array.Exists(Environment.GetCommandLineArgs(), x => x == "-runTests");
-            saves = new SaveSystem(Application.persistentDataPath);
-            Game = new GameSession(testMode ? GameState.New() : saves.Load(), Resources.Load<GameDatabase>("GameDatabase"));
+            testMode = Environment.GetEnvironmentVariable("BROTINHO_TEST_MODE") == "1" || Application.isBatchMode && Array.Exists(Environment.GetCommandLineArgs(), x => x == "-runTests");
+            var data = Resources.Load<GameDatabase>("GameDatabase");
+            saves = new SaveSystem(Application.persistentDataPath, state => SaveStateValidator.ForDatabase(state, data));
+            Game = new GameSession(testMode ? GameState.New() : saves.Load(), data);
             Text = new Localization(Game.State);
             CatchUp();
             gameObject.AddComponent<AudioManager>().Initialize(this);
@@ -45,13 +49,15 @@ namespace Brotinho
         void SceneReady(Scene scene, LoadSceneMode mode)
         {
             Placement = null;
+            inFarm = scene.name == "Farm";
             var ui = new GameObject("Interface").AddComponent<GameUI>();
             ui.Initialize(this, scene.name);
             if (scene.name == "Boot") { StartCoroutine(LeaveBoot()); return; }
-            if (saves.LastError != null) Game.Bus.Notify(saves.LastError);
+            if (saves.LastError != null) { Game.Bus.Notify(saves.LastError); Game.Bus.Open("error"); }
             if (scene.name == "Farm")
             {
                 new GameObject("FarmWorld").AddComponent<FarmView>().Initialize(this);
+                new GameObject("FeedbackPool").AddComponent<FeedbackPool>().Initialize(this);
                 Camera.main.gameObject.AddComponent<PlayerController>().Initialize(this);
                 var prefab = Resources.Load<GameObject>("Prefabs/Player");
                 var farmer = prefab != null ? Instantiate(prefab) : new GameObject("Farmer", typeof(SpriteRenderer));
@@ -63,7 +69,7 @@ namespace Brotinho
         System.Collections.IEnumerator LeaveBoot() { yield return null; yield return new WaitForSecondsRealtime(.2f); SceneLoader.Load("Title"); }
         void Update()
         {
-            if (suspended || SceneManager.GetActiveScene().name != "Farm") return;
+            if (suspended || !inFarm) return;
             accumulator += Time.unscaledDeltaTime;
             if (accumulator >= 1) { var seconds = (int)accumulator; accumulator -= seconds; Simulation.Advance(Game, seconds); Game.Bus.Refresh(); }
             autosave += Time.unscaledDeltaTime; if (autosave >= 30) { autosave = 0; SaveNow(); }
@@ -82,13 +88,13 @@ namespace Brotinho
         {
             if (Game == null || testMode) return;
             if (accumulator > 0) { Simulation.Advance(Game, accumulator); accumulator = 0; }
-            if (!saves.Save(Game.State, DateTimeOffset.UtcNow.ToUnixTimeSeconds())) Game.Bus.Notify(saves.LastError ?? "save_failed");
+            if (!saves.Save(Game.State, DateTimeOffset.UtcNow.ToUnixTimeSeconds())) { Game.Bus.Notify(saves.LastError ?? "save_failed"); Game.Bus.Open("error"); }
         }
         public void ResetGame()
         {
             if (!testMode) saves.Reset();
             Game = new GameSession(GameState.New(), Game.Data, Game.Bus); Text = new Localization(Game.State);
-            Offline = null; accumulator = autosave = 0; Placement = null; Tool = PlayerTool.Plant; SelectedCrop = "lettuce";
+            Offline = null; accumulator = autosave = 0; Placement = null; ZoneWorker = null; Tool = PlayerTool.Plant; SelectedCrop = "lettuce";
             SaveNow(); SceneLoader.Load("Title");
         }
         void OnApplicationPause(bool paused)
@@ -98,7 +104,7 @@ namespace Brotinho
             else if (suspended) { suspended = false; CatchUp(); Game.Bus.Refresh(); if (Offline.seconds > 2) Game.Bus.Open("afk"); }
         }
         void OnApplicationQuit() => SaveNow();
-        void AdvanceTutorial() { }
+        void AdvanceTutorial() => TutorialOverlay.Advance(Game.State);
         void OnDestroy() { if (Instance != this) return; SceneManager.sceneLoaded -= SceneReady; Instance = null; }
     }
 }

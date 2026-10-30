@@ -14,6 +14,7 @@ namespace Brotinho
         public AchievementData[] achievements = Array.Empty<AchievementData>();
         public VillagerData[] villagers = Array.Empty<VillagerData>();
         public double offlineCapSeconds = 8 * 3600;
+        public int speedupGemCost = 1, avatarGemCost = 5;
         public CropBase Crop(string id) => Array.Find(crops, x => x.id == id);
         public BuildingBase Building(string id) => Array.Find(buildings, x => x.id == id);
         public ProductData Product(string id) => Array.Find(products, x => x.id == id);

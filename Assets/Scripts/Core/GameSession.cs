@@ -20,12 +20,12 @@ namespace Brotinho
             // Forest apple saplings are free and do not consume stock, as requested.
             if (!(State.region == "forest" && cropId == "apple") && !State.Take("seed_" + cropId, 1)) return Fail("no_seeds");
             State.crops.Add(new CropInstance { id = NextId("crop"), definition = cropId, x = x, y = y });
-            Bus.Play(SfxEvent.Plant); Bus.Refresh(); return true;
+            Bus.Play(SfxEvent.Plant); Bus.Emit(x, y, SfxEvent.Plant); Bus.Refresh(); return true;
         }
         public bool Water(int x, int y)
         {
             var crop = Grid.Crop(x, y); if (crop == null) return false;
-            crop.wateredUntil = State.elapsed + 60; Bus.Play(SfxEvent.Water); Bus.Refresh(); return true;
+            crop.wateredUntil = State.elapsed + 60; Bus.Play(SfxEvent.Water); Bus.Emit(x, y, SfxEvent.Water); Bus.Refresh(); return true;
         }
         public bool Remove(int x, int y)
         {

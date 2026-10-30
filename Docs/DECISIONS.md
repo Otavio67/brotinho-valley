@@ -16,3 +16,5 @@
 - Notifications are a saved preference and an integration hook; no OS notification scheduling, ads, IAP, analytics service or online warning is needed for this offline game foundation.
 - Undo is limited to the most recent untouched construction, including its refund. It cannot erase animals, queued inputs, products or storage contents. Crop removal requires confirmation in the UI.
 - Saves are JSON under persistentDataPath, with a temporary write, primary/backup rotation, version guard and recovery. A future-version save or unrecoverable corruption disables automatic overwrites until the player explicitly resets.
+- Gem defaults: a crop growth completion costs 1 earned gem and a new avatar costs 5. These are editable GameDatabase values; no real-money purchase or paid offline-report skip exists.
+- Production timers continue while feature panels are open, as expected for a real-time farm. Leaving for Title pauses the running farm; closing/resuming the app uses the bounded offline rules.

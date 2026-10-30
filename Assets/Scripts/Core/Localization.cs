@@ -18,6 +18,7 @@ namespace Brotinho
             }
         }
         public string Get(string key) => entries.TryGetValue(key, out var value) ? value[state.language == "en" ? 2 : 1] : key;
+        public bool Has(string key) => entries.ContainsKey(key);
         public string Format(string key, params object[] values) => string.Format(Get(key), values);
     }
 }

@@ -9,7 +9,7 @@ namespace Brotinho
         public readonly GridManager Grid;
         public readonly EventBus Bus;
         public GameSession(GameState state, GameDatabase data, EventBus bus = null)
-        { State = state; Data = data; Grid = new GridManager(state); Bus = bus ?? new EventBus(); }
+        { State = state; Data = data; Grid = new GridManager(state); Bus = bus ?? new EventBus(); OrderManager.Refresh(this); AchievementManager.RefreshDaily(state); }
         public bool Plant(string cropId, int x, int y)
         {
             var crop = Data.Crop(cropId);

@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0] — 2026-10-30
+
+- Add atomic harvesting, selling and seed purchases, per-type storage limits and XP rewards.
+- Add deterministic daily prices, per-unit sell pressure/recovery, three rotating villager orders and daily/achievement claim rules.
+- Add adjacent 4×4 expansion selection and the specified increasing price sequence.
+- Expose the harvest/water tools and basic shop, inventory, market and orders panels.
+
 ## [0.1.0] — 2026-10-30
 
 - Initialize `main`, Unity-specific ignores and local Git LFS filters before adding code or assets.

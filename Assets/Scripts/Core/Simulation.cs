@@ -16,9 +16,11 @@ namespace Brotinho
             state.tickRemainder = accumulated - ticks;
             for (int i = 0; i < ticks; i++)
             {
+                AchievementManager.RefreshDaily(state);
                 bool rain = WeatherSystem.At(state.elapsed) == WeatherKind.Rain;
                 foreach (var crop in state.crops) CropGrowthController.Advance(crop, game.Data.Crop(crop.definition), state.region, state.elapsed, 1, rain);
                 state.elapsed++;
+                OrderManager.Refresh(game);
             }
             report.harvests = state.harvested - crops; report.production = state.produced - products;
             report.sales = state.sold - sales; report.coins = state.coins - coins;

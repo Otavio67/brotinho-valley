@@ -9,3 +9,8 @@ Environment: Windows 11, Unity 6 LTS 6000.3.27f1. Baseline: empty repository, no
 - Initial assembly placement and the separate URP 2D assembly reference were corrected before committing. A visual check caught JPEG import discarding alpha; output now uses a separate RGBA texture.
 - Sprite-source preservation, alpha channels, serialized pipeline assignment and runtime smoke tests are verified as the foundation is completed; detailed final results appear below.
 - Android/iOS device testing, signing and measured 60 FPS remain unverified until target hardware is available.
+
+## v0.2.0
+
+- `Tools/Validate.ps1 -Mode EditMode`: Unity compilation succeeded; 16 passed, 0 failed, 0 skipped.
+- New cases cover atomic purchasing/harvest capacity, apple regrowth, sell-all equivalence, bounded market multipliers, pressure recovery, one-time order rewards, expansion adjacency/cost and repeat-claim rejection.

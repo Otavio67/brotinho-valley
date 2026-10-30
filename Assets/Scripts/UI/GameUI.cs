@@ -79,8 +79,17 @@ namespace Brotinho
         {
             hud = Label(top, "", 32);
             Button(top, L("orders"), () => Open("orders"));
+            var cropRow = QuickRow(bottom);
             foreach (var crop in manager.Game.Data.crops)
-            { var id = crop.id; Button(bottom, L("crop_" + id), () => { manager.SelectedCrop = id; manager.Tool = PlayerTool.Plant; ShowToast("plant"); }); }
+            { var id = crop.id; Button(cropRow, L("crop_" + id), () => { manager.SelectedCrop = id; manager.Tool = PlayerTool.Plant; ShowToast("plant"); }); }
+            var toolRow = QuickRow(bottom);
+            Button(toolRow, L("water"), () => manager.Tool = PlayerTool.Water); Button(toolRow, L("harvest"), () => manager.Tool = PlayerTool.Harvest);
+            var menus = QuickRow(bottom); foreach (string id in new[] { "shop", "inventory", "sell" }) { string target = id; Button(menus, L(id), () => Open(target)); }
+        }
+        RectTransform QuickRow(Transform parent)
+        {
+            var rect = Rect("Actions", parent); var layout = rect.gameObject.AddComponent<UnityEngine.UI.HorizontalLayoutGroup>(); layout.spacing = 8; layout.childControlHeight = layout.childControlWidth = true; layout.childForceExpandWidth = true;
+            rect.gameObject.AddComponent<UnityEngine.UI.LayoutElement>().minHeight = 78; return rect;
         }
         void Refresh()
         {
@@ -88,7 +97,21 @@ namespace Brotinho
             var s = manager.Game.State;
             hud.text = L("coins") + " " + s.coins + "   " + L("gems") + " " + s.gems + "\n" + L("day") + " " + (TimeManager.Day(s.elapsed) + 1) + " · " + TimeManager.Hour(s.elapsed).ToString("00") + ":00 · " + L("weather_" + WeatherSystem.At(s.elapsed).ToString().ToLowerInvariant());
         }
-        public void Open(string panel) { currentPanel = panel; ShowToast(panel); }
+        public void Open(string panel)
+        {
+            if (modal != null) Destroy(modal.gameObject); currentPanel = panel; ModalOpen = true;
+            modal = Box(safe, new Vector2(.06f, .22f), new Vector2(.94f, .84f), new Color(1, .97f, .86f)); Layout(modal);
+            Label(modal, L(panel), 38); Button(modal, L("close"), () => { Destroy(modal.gameObject); ModalOpen = false; });
+            var game = manager.Game;
+            if (panel == "shop") foreach (var crop in game.Data.crops) { string id = crop.id; Button(modal, L("crop_" + id) + " · " + crop.seedCost, () => ShopManager.BuySeeds(game, id)); }
+            if (panel == "inventory" || panel == "sell") foreach (var product in game.Data.products)
+            {
+                if (game.State.Count(product.id) == 0) continue; string id = product.id;
+                Button(modal, L(game.Data.Crop(id) != null ? "crop_" + id : "product_" + id) + " ×" + game.State.Count(id) + " · " + L("sell_all") + " " + PriceTable.Quote(game, id, game.State.Count(id)), () => { SellManager.Sell(game, id, game.State.Count(id)); Open(panel); });
+            }
+            if (panel == "orders") foreach (var order in game.State.orders) { string id = order.id; Button(modal, L("crop_" + order.product) + " ×" + order.quantity + " → " + order.reward + " " + L("coins"), () => { OrderManager.Complete(game, id); Open(panel); }); }
+            modal.GetComponent<PanelBase>().Open();
+        }
         void ShowToast(string key) { if (toast == null) return; toast.text = L(key); toastUntil = Time.unscaledTime + 2.5f; }
         void Update() { if (toast != null && Time.unscaledTime > toastUntil) toast.text = ""; }
         void OnDestroy()

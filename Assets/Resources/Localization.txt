@@ -35,3 +35,12 @@ storage_full	Armazém cheio para este item.	Storage is full for this item.
 level_up	Novo nível!	Level up!
 empty_tile	Um cantinho para crescer.	A little room to grow.
 orders	Pedidos dos vizinhos	Villager orders
+shop	Loja	Shop
+inventory	Inventário	Inventory
+sell	Mercado	Market
+sell_all	Vender tudo	Sell all
+close	Fechar	Close
+not_enough_coins	Moedas insuficientes.	Not enough coins.
+empty_input	Faltam ingredientes ou itens.	Missing ingredients or items.
+order_expired	Este pedido expirou.	This order has expired.
+order_complete	Pedido entregue!	Order completed!

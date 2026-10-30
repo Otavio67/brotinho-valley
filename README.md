@@ -10,7 +10,7 @@ The Editor menu **Brotinho > Build foundation assets and scenes** regenerates de
 
 ## Current milestone
 
-In development: v0.1.0 — Boot, regions, grid and planting. Milestones are tagged only after their automated acceptance checks pass. Subsequent targets: v0.2 economy; v0.3 animals and processing; v0.4 workers and offline progress; v0.5 complete UI shell; v0.6 save, localization and tutorial.
+Current implementation: v0.2.0 — harvest, selling, economy, orders and expansion. Subsequent targets: v0.3 animals and processing; v0.4 workers and offline progress; v0.5 complete UI shell; v0.6 save, localization and tutorial.
 
 ## Assets
 

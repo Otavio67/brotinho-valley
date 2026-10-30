@@ -8,8 +8,9 @@ New-Item -ItemType Directory -Path (Join-Path $projectRoot 'Logs'),(Join-Path $p
 $log = Join-Path $projectRoot ('Logs\' + $Mode + '.log')
 $arguments = @('-batchmode','-projectPath',('"' + $projectRoot + '"'),'-logFile',('"' + $log + '"'))
 if ($Mode -eq 'Generate' -or $Mode -eq 'Verify') {
-    $method = if ($Mode -eq 'Generate') { 'Brotinho.Editor.ProjectBuilder.Build' } else { 'Brotinho.Editor.ProjectBuilder.Verify' }
-    $arguments += @('-nographics','-executeMethod',$method,'-quit')
+    $method = if ($Mode -eq 'Generate') { 'Brotinho.Editor.ProjectBuilder.BuildAndExit' } else { 'Brotinho.Editor.ProjectBuilder.Verify' }
+    $arguments += @('-nographics','-executeMethod',$method)
+    if ($Mode -eq 'Verify') { $arguments += '-quit' }
 } else {
     $arguments += @('-runTests','-testPlatform',$Mode,'-testResults',('"' + (Join-Path $projectRoot ('TestResults\' + $Mode + '.xml')) + '"'))
 }

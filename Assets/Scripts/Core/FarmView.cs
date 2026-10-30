@@ -9,6 +9,8 @@ namespace Brotinho
         readonly List<SpriteRenderer> crops = new List<SpriteRenderer>();
         readonly List<SpriteRenderer> buildings = new List<SpriteRenderer>();
         readonly List<AnimalBehavior> animals = new List<AnimalBehavior>();
+        readonly List<SpriteRenderer> workers = new List<SpriteRenderer>();
+        readonly List<SpriteRenderer> locks = new List<SpriteRenderer>();
         SpriteRenderer ghost;
         public void Initialize(GameManager manager)
         {
@@ -18,11 +20,15 @@ namespace Brotinho
                 var tile = Make("Tile", transform); tile.transform.position = new Vector3(x, y, 0); tile.sortingOrder = -100; tiles.Add(tile);
             }
             ghost = Make("PlacementPreview", transform); ghost.sortingOrder = 100;
+            for (int y = 3; y < 21; y += 4) for (int x = 3; x < 21; x += 4)
+            { var padlock = Make("Lock", transform); Fit(padlock, manager.Art.Get("icon_lock"), .45f); padlock.transform.position = new Vector3(x, y, 0); padlock.sortingOrder = -90; locks.Add(padlock); }
             manager.Game.Bus.Changed += Refresh; Refresh();
         }
         SpriteRenderer Make(string name, Transform parent)
         {
-            var item = new GameObject(name).AddComponent<SpriteRenderer>(); item.transform.SetParent(parent);
+            var prefab = name == "Crop" || name == "Animal" || name == "Building" || name == "Worker" ? Resources.Load<GameObject>("Prefabs/" + name) : null;
+            var instance = prefab != null ? Instantiate(prefab) : new GameObject(name, typeof(SpriteRenderer));
+            var item = instance.GetComponent<SpriteRenderer>(); item.transform.SetParent(parent);
             item.sharedMaterial = Resources.Load<Material>("FarmSprite"); return item;
         }
         void Fit(SpriteRenderer view, Sprite sprite, float width)
@@ -33,6 +39,7 @@ namespace Brotinho
         {
             if (manager == null) return;
             var game = manager.Game;
+            foreach (var padlock in locks) padlock.gameObject.SetActive(!game.Grid.Unlocked(Mathf.RoundToInt(padlock.transform.position.x), Mathf.RoundToInt(padlock.transform.position.y)));
             for (int y = 0; y < GridManager.WorldSize; y++) for (int x = 0; x < GridManager.WorldSize; x++)
             {
                 var view = tiles[y * GridManager.WorldSize + x];
@@ -55,12 +62,18 @@ namespace Brotinho
                 var b = game.State.buildings[i]; var size = PlacementValidator.Size(game.Data.Building(b.definition), b.rotation);
                 bool night = TimeManager.Hour(game.State.elapsed) < 6 || TimeManager.Hour(game.State.elapsed) >= 18;
                 Fit(view, manager.Art.Get("building_" + b.definition + (night ? "_night" : "_day")), size.x);
-                view.transform.position = new Vector3(b.x + (size.x - 1) / 2f, b.y + (size.y - 1) / 2f, 0); view.sortingOrder = 40 - b.y;
+                view.transform.position = new Vector3(b.x + (size.x - 1) / 2f, b.y + (size.y - 1) / 2f + .6f, 0); view.sortingOrder = 40 - b.y;
                 view.transform.localRotation = Quaternion.Euler(0, 0, b.rotation * 90);
             }
             while (animals.Count < game.State.animals.Count)
             {
-                var view = Make("Animal", transform); var behavior = view.gameObject.AddComponent<AnimalBehavior>(); behavior.Bind(manager, game.State.animals[animals.Count]); animals.Add(behavior);
+                var view = Make("Animal", transform); var behavior = view.GetComponent<AnimalBehavior>() ?? view.gameObject.AddComponent<AnimalBehavior>(); behavior.Bind(manager, game.State.animals[animals.Count]); animals.Add(behavior);
+            }
+            while (workers.Count < game.State.workers.Count) workers.Add(Make("Worker", transform));
+            for (int i = 0; i < workers.Count; i++)
+            {
+                var w = game.State.workers[i]; var view = workers[i]; Fit(view, manager.Art.Get("player_idle_down"), .55f);
+                view.transform.position = new Vector3(w.x + i * .35f + .3f, w.y + .2f, 0); view.sortingOrder = 65 - w.y;
             }
         }
         void Update()

@@ -1,0 +1,5 @@
+{
+  "name": "Brotinho.PlayTests",
+  "references": ["Brotinho.Runtime", "Unity.ugui", "Unity.TextMeshPro", "Unity.RenderPipelines.Universal.Runtime"],
+  "optionalUnityReferences": ["TestAssemblies"]
+}

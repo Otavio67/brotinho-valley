@@ -15,6 +15,8 @@ namespace Brotinho
         public string Placement;
         public int Rotation;
         public Vector2Int PlacementTile = new Vector2Int(8, 8);
+        public WorkerInstance ZoneWorker;
+        public PlayerMovement Farmer { get; private set; }
         double accumulator;
         SaveSystem saves;
         double autosave;
@@ -35,6 +37,7 @@ namespace Brotinho
             Game = new GameSession(testMode ? GameState.New() : saves.Load(), Resources.Load<GameDatabase>("GameDatabase"));
             Text = new Localization(Game.State);
             CatchUp();
+            gameObject.AddComponent<AudioManager>().Initialize(this);
             SceneManager.sceneLoaded += SceneReady;
             Game.Bus.Changed += AdvanceTutorial;
             SceneReady(SceneManager.GetActiveScene(), LoadSceneMode.Single);
@@ -42,17 +45,22 @@ namespace Brotinho
         void SceneReady(Scene scene, LoadSceneMode mode)
         {
             Placement = null;
-            if (scene.name == "Boot") { SceneLoader.Load("Title"); return; }
             var ui = new GameObject("Interface").AddComponent<GameUI>();
             ui.Initialize(this, scene.name);
+            if (scene.name == "Boot") { StartCoroutine(LeaveBoot()); return; }
             if (saves.LastError != null) Game.Bus.Notify(saves.LastError);
             if (scene.name == "Farm")
             {
                 new GameObject("FarmWorld").AddComponent<FarmView>().Initialize(this);
                 Camera.main.gameObject.AddComponent<PlayerController>().Initialize(this);
+                var prefab = Resources.Load<GameObject>("Prefabs/Player");
+                var farmer = prefab != null ? Instantiate(prefab) : new GameObject("Farmer", typeof(SpriteRenderer));
+                Farmer = farmer.GetComponent<PlayerMovement>() ?? farmer.AddComponent<PlayerMovement>(); Farmer.Initialize(this);
+                var light = FindAnyObjectByType<UnityEngine.Rendering.Universal.Light2D>(); if (light != null) light.gameObject.AddComponent<DayNightCycle>();
                 if (Offline != null && Offline.seconds > 2) Game.Bus.Open("afk");
             }
         }
+        System.Collections.IEnumerator LeaveBoot() { yield return null; yield return new WaitForSecondsRealtime(.2f); SceneLoader.Load("Title"); }
         void Update()
         {
             if (suspended || SceneManager.GetActiveScene().name != "Farm") return;

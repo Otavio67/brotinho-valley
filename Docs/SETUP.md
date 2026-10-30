@@ -6,8 +6,8 @@ Assets/
   Art/Transparent/     same-size PNG derivatives, green background removed
   Art/Atlases/         Crops, Animals, UI SpriteAtlas assets
   Editor/             reproducible data, import, prefab and scene builders
-  Prefabs/            Player, Crop, Animal, Building, Worker, Panel
   Resources/          GameDatabase, SpriteLibrary, localization, default data
+    Prefabs/          Player, Crop, Animal, Building, Worker, Panel
   Scenes/             Boot, Title, RegionSelect, Farm
   Scripts/
     Core/ Grid/ Farming/ Animals/ Buildings/ Workers/ Economy/

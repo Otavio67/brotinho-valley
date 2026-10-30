@@ -5,6 +5,7 @@ namespace Brotinho
     {
         public static WeatherKind At(double time)
         {
+            if (time < 30) return WeatherKind.Sunny;
             uint hour = (uint)(time / TimeManager.HourSeconds);
             uint hash = hour * 747796405u + 2891336453u;
             hash = ((hash >> (int)((hash >> 28) + 4)) ^ hash) * 277803737u;

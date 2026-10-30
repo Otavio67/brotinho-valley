@@ -19,6 +19,12 @@ Tools/Upcoming/
 *.log
 *.tmp
 *.user
+*.unitypackage
+*.unitypackage.meta
+Assets/TextMesh Pro/Package Resources/
+Assets/TextMesh Pro/Package Resources.meta
+Assets/TextMesh Pro/Editor Resources/
+Assets/TextMesh Pro/Editor Resources.meta
 .env
 .env.*
 *.keystore

@@ -24,3 +24,11 @@ Environment: Windows 11, Unity 6 LTS 6000.3.27f1. Baseline: empty repository, no
 
 - `Tools/Validate.ps1 -Mode EditMode`: Unity compilation succeeded; 28 passed, 0 failed, 0 skipped.
 - New cases prove hire costs/slot limits, zone-restricted harvesting/planting, automatic energy recovery, deterministic 300×1s versus 1×300s simulation, required market access and bounded 8-hour catch-up with hunger reporting.
+
+## v0.5.0
+
+- EditMode: 28 passed. PlayMode: 5 passed, 0 failed, 0 skipped. The PlayMode run recompiles all affected assemblies before execution.
+- Runtime checks open the full feature panel set, exercise Boot → Title → RegionSelect → Farm through actual menu buttons, use the worker dropdown, and verify planting/harvesting/selling plus remove confirmation/cancel.
+- Actual 1080×1920 URP captures were visually inspected: `TestResults/Preview-Farm.png` and `Preview-Title.png`.
+- Visual QA caught missing TMP resources and atlas-name collisions that compilation alone did not catch. Essential resources now finish importing through the supported callback before batch exit; all atlases have unique names. Screens render legible text and the intended sprites.
+- All 21 original files match the user-provided source SHA-256 byte-for-byte; hashes are in `Docs/SOURCE_ASSETS.json`.

@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.5.0] — 2026-10-30
+
+- Add the full responsive panel set, scrollable lists, live progress, confirmations, empty/error states, worker task dropdown and zone assignment.
+- Add title/region art, safe-area HUD, tool/placement bars, profile/settings, orders, expansion preview, AFK summary and development-only debug actions.
+- Add obstacle-aware farmer movement, mouse/touch UI blocking, smooth URP day/night lighting and silent-safe audio events/music crossfade hooks.
+
 ## [0.4.0] — 2026-10-30
 
 - Add worker hiring, zone-limited farming/animal/processing/selling tasks, energy slowdown and automatic rest.

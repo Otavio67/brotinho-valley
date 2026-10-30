@@ -1,0 +1,86 @@
+[
+  {
+    "file": "afternoon-sky.jpeg",
+    "sha256": "ed0aa67f50163d4afaff8736421347b3a9387ab1d2fc28521e3ab0884ee7a6fe"
+  },
+  {
+    "file": "all-assets.jpeg",
+    "sha256": "dc65518c3fa688a25f57bcf9159d9361f1941096004d37bb6c901d0cfcf6c075"
+  },
+  {
+    "file": "apple_tree.jpeg",
+    "sha256": "f4c0f9ea5d495ee398c3a23c9014e4be489677d338f37d63db747472cd64ca8f"
+  },
+  {
+    "file": "barn.jpeg",
+    "sha256": "fb26c139eee033cdc8e946c62a82a9a2b3548b4e7cafcc16fa462cd7ae78e1c4"
+  },
+  {
+    "file": "bright-sky.jpeg",
+    "sha256": "c8d83950d1e04c41da7ca6ba5bbee1f76dbaf7a0deec3b4aba33fa6b2370e04d"
+  },
+  {
+    "file": "carrot.jpeg",
+    "sha256": "5871432cd1f51da6399059b98fab31d12a3ef1814a30cd665d30007831f8e3e2"
+  },
+  {
+    "file": "chicken-coop.jpeg",
+    "sha256": "1b45019647c32b93a67410b40037fcba1fd962c4bac25894fe9b6b1262e3be83"
+  },
+  {
+    "file": "chicken.jpeg",
+    "sha256": "e90e48e3cde79fce79c5921f2bfa15d7b3295257b7276b1d33d2289e6b1849ff"
+  },
+  {
+    "file": "cow.jpeg",
+    "sha256": "f0665353b4bdf15ab9d0e0337fe28ee879d0d05ff9b3974fa523f50a34548274"
+  },
+  {
+    "file": "differents-backgrounds.jpeg",
+    "sha256": "dc89fbc76a4312db5453e06a4c9d9e7e4b2b551c1fb92103f85a148bd8531112"
+  },
+  {
+    "file": "farmhouse.jpeg",
+    "sha256": "b4d9d55f31d2c5d11701a174d926745b8411ec9af7e8826a009553544c2be88f"
+  },
+  {
+    "file": "lettuce.jpeg",
+    "sha256": "90b3c8c26997a562727ac288343e797712e1b5c219c3ddb6097526193944e336"
+  },
+  {
+    "file": "my_farmer.jpeg",
+    "sha256": "c1484050c65433c481bf32a43c22efa77d5caa1a08d2d124ca63d2e22fe4e737"
+  },
+  {
+    "file": "night_sky.jpeg",
+    "sha256": "ed75fd5bce7c990993b628deaf5a9cb2e320b4f39d194d2d6675171fa0bc228d"
+  },
+  {
+    "file": "pig.jpeg",
+    "sha256": "acba30efddc780de4f8981e2092416f592aff103224acb06db90d983d08053b5"
+  },
+  {
+    "file": "rabbit.jpeg",
+    "sha256": "f04f8147ff35e0ab60251756617d8f99dae62b9e893b59b9925c9a466e287317"
+  },
+  {
+    "file": "silo.jpeg",
+    "sha256": "75f6f66a3ac21bdeeee92d129e81e835baf93219af73374e3aa531f734f3f916"
+  },
+  {
+    "file": "tileset.jpeg",
+    "sha256": "308fa5a48ee157c68c710be36f41392a9299b98e211ccbd7dc265f65be8ddf40"
+  },
+  {
+    "file": "water-well.jpeg",
+    "sha256": "b826e283d7678fd802a4ade750b4d8927f537582dee72bae1f5727ac8007acf1"
+  },
+  {
+    "file": "wheat.jpeg",
+    "sha256": "6f27ae2a325ee84a54d8387b280c04d77b53ebbeff1b6087a26122a97f1a23e9"
+  },
+  {
+    "file": "windmill.jpeg",
+    "sha256": "7c3d86b5999147491743fe18f728116a4f41fd37298c32c011963788e2b34aac"
+  }
+]

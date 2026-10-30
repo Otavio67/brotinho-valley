@@ -99,3 +99,109 @@ save_failed	Não foi possível salvar. Tente novamente.	Could not save. Please r
 save_recovered	Arquivo de segurança recuperado.	Recovered the backup save.
 save_corrupt	O arquivo está danificado. Seus dados foram preservados; o salvamento está suspenso.	The save is damaged. Your files are preserved; saving is suspended.
 save_newer_version	Este save pertence a uma versão mais nova. Seus arquivos foram preservados.	This save belongs to a newer version. Your files were preserved.
+tagline	Plante um pequeno mundo feliz.	Grow a little happy world.
+loading	Preparando seu cantinho…	Preparing your little farm…
+build_hint	Toque ou arraste no terreno para posicionar.	Tap or drag on the land to position.
+buildings	Construções	Buildings
+decorations	Decorações	Decorations
+undo	Desfazer última construção	Undo last construction
+seeds	Sementes	Seeds
+seed	Semente	Seed
+storage	Armazenamento	Storage
+capacity	Capacidade	Capacity
+per_type	por tipo de item	per item type
+use	Usar	Use
+sell_one	Vender um	Sell one
+empty_inventory	Seu cesto está vazio. A primeira colheita vem aí!	Your basket is empty. Your first harvest is on its way!
+worker_slots	Vagas	Worker slots
+empty_workers	Nenhum ajudante ainda. Um novo amigo chegará em breve.	No helpers yet. A new friend will arrive soon.
+details	Ver detalhes	Details
+worker_detail	Seu ajudante	Your helper
+personality_cheerful	Alegre	Cheerful
+personality_careful	Devagar e cuidadoso	Slow and careful
+personality_messy	Rápida e atrapalhada	Fast and messy
+personality_grumpy	Resmungão carinhoso	Lovable grump
+specialty_farming	Especialidade: plantio	Specialty: farming
+specialty_animals	Especialidade: animais	Specialty: animals
+specialty_processing	Especialidade: produção	Specialty: processing
+specialty_selling	Especialidade: vendas	Specialty: selling
+assign_zone	Escolher área de trabalho	Choose work zone
+zone_hint	Toque no centro da área 5×5 desejada.	Tap the center of the desired 5×5 zone.
+zone	Área	Zone
+rest	Descansar	Rest
+history	Últimas tarefas	Recent tasks
+empty_animals	Seu primeiro bichinho precisa de um lar aconchegante.	Your first animal needs a cozy home.
+ready	Pronto	Ready
+empty_processing	Construa um moinho para começar.	Build a mill to get started.
+processor	Produção da construção	Building production
+seconds	segundos	seconds
+minutes	minutos	minutes
+output	Prontos	Output
+enqueue	Adicionar à fila	Add to queue
+complete	Entregar pedido	Complete order
+empty_orders	Seus vizinhos voltarão com novos pedidos.	Your neighbors will bring more orders soon.
+expansion	Expandir a fazenda	Expand the farm
+cost	Custo	Cost
+no_expansion	Todo o terreno disponível já foi explorado.	All available land has been explored.
+next_block	Próximo bloco	Next block
+next	Continuar →	Continue →
+unlock	Desbloquear	Unlock
+achievements	Conquistas	Achievements
+achievement_first_harvest	Primeira colheita	First harvest
+achievement_merchant	Feirante de primeira	Market regular
+achievement_neighbor	Bom vizinho	Good neighbor
+achievement_rancher	Amigos de pelo e pena	Furry and feathered friends
+achievement_explorer	Mais espaço para sonhar	Room to dream
+claim	Resgatar	Claim
+daily	Desafios diários	Daily challenges
+refresh_in	Novos desafios em	New challenges in
+daily_harvest	Colha 10 produtos	Harvest 10 items
+daily_sales	Venda 10 produtos	Sell 10 items
+daily_orders	Conclua 1 pedido	Complete 1 order
+profile	Meu perfil	My profile
+avatar	Avatar	Avatar
+level	Nível	Level
+xp	XP	XP
+stats	Minha fazenda	My farm
+sales	Vendas	Sales
+settings	Configurações	Settings
+language	Idioma	Language
+sound	Efeitos sonoros	Sound effects
+music	Música	Music
+vibration	Vibração	Vibration
+notifications	Lembretes (preferência)	Reminders (preference)
+reset_save	Recomeçar a fazenda	Reset farm save
+menu	Menu	Menu
+pause	Pausa	Pause
+resume	Voltar à fazenda	Resume farm
+quit_title	Voltar ao início	Return to title
+no_afk	Sua fazenda acabou de despertar.	Your farm has just woken up.
+afk_welcome	Bem-vindo de volta!	Welcome back!
+dialog	Uma conversa no campo	A countryside chat
+villager_rosa	Rosa	Rosa
+villager_tomas	Tomás	Tomas
+villager_iris	Íris	Iris
+greeting_rosa	Que bom ver sua fazenda florescer! Tenho um pedido especial para você.	How lovely to see your farm bloom! I have a special order for you.
+greeting_tomas	O cheiro de pão fresco alegra o vale.	The scent of fresh bread cheers up the valley.
+greeting_iris	Cada pequena colheita é motivo de festa.	Every little harvest is worth celebrating.
+maybe_later	Conversamos depois	Maybe later
+credits	Créditos	Credits
+credits_body	Brotinho Valley. Feito com carinho. Arte fornecida pelo criador do projeto. Áudio será adicionado em breve.	Brotinho Valley. Made with care. Art supplied by the project creator. Audio will be added soon.
+error	Ops, precisamos de um instante	Oops, we need a moment
+retry	Tentar salvar novamente	Retry saving
+debug	Ferramentas de desenvolvimento	Development tools
+add_coins	Adicionar 10.000 moedas	Add 10,000 coins
+skip_time	Avançar 10 minutos	Advance 10 minutes
+confirm_message	Deseja confirmar esta ação?	Would you like to confirm this action?
+buy	Comprar	Buy
+on	Ligado	On
+off	Desligado	Off
+move	Andar	Move
+remove	Remover	Remove
+tutorial_0	Seu começo: plante uma alface em um espaço livre.	Your beginning: plant lettuce on an empty tile.
+tutorial_1	Espere crescer e colha sua primeira planta.	Wait for it to grow and harvest your first crop.
+tutorial_2	Abra o inventário e venda uma colheita.	Open inventory and sell a harvest.
+tutorial_3	Dê um lar a uma galinha: construa um galinheiro.	Give a chicken a home: build a coop.
+tutorial_4	Contrate seu primeiro ajudante.	Hire your first helper.
+tutorial_5	Entregue um pedido de um vizinho.	Complete a neighbor's order.
+tutorial_6	Sua fazenda está florescendo. Aproveite o vale!	Your farm is blooming. Enjoy the valley!

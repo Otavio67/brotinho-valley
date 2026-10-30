@@ -18,72 +18,92 @@ MonoBehaviour:
     sprite: {fileID: 1388049003773939220, guid: b03c5eb103b645b46b9e670b444c7eae, type: 3}
   - name: afternoon-sky
     sprite: {fileID: 1388049003773939220, guid: b03c5eb103b645b46b9e670b444c7eae, type: 3}
-  - name: icon_apple
-    sprite: {fileID: -4165668218423927518, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_bread
-    sprite: {fileID: -3052873774105304232, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_build
-    sprite: {fileID: -658742112255296425, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_carrot
-    sprite: {fileID: -8931956574364583230, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_cheese
-    sprite: {fileID: -3373729320080956571, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_chicken
-    sprite: {fileID: 3553939410108082883, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_coin
-    sprite: {fileID: -2668368429839821216, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_cow
-    sprite: {fileID: 7806701457784682105, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_egg
-    sprite: {fileID: -1927975520965488876, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_flour
-    sprite: {fileID: 2419401439483174887, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_gem
-    sprite: {fileID: 1293072516252954205, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_harvest
-    sprite: {fileID: 5351786471198919569, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_home
-    sprite: {fileID: -8685332795733812696, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_inventory
-    sprite: {fileID: 990114396112045252, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_jam
-    sprite: {fileID: -6432489059280883572, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_lettuce
-    sprite: {fileID: 9044399292513077733, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_lock
-    sprite: {fileID: -7614662209602743585, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_milk
-    sprite: {fileID: -934403849501251223, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_plant
-    sprite: {fileID: 5153018138075214935, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_profile
-    sprite: {fileID: 5352688606708250072, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_rabbit
-    sprite: {fileID: -6093278733300331257, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_remove
-    sprite: {fileID: -5521198437129584981, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_sell
-    sprite: {fileID: -7061683953528280495, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_settings
-    sprite: {fileID: -4213078718187347345, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_shop
-    sprite: {fileID: -2459231281210174493, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_upgrade
-    sprite: {fileID: -5356211433497995897, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_water
-    sprite: {fileID: 3416104080082018083, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_wheat
-    sprite: {fileID: 5364222945162982727, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: icon_wool
-    sprite: {fileID: -8517026341312844961, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: btn_primary_normal
-    sprite: {fileID: 2159669579848111919, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
-  - name: btn_primary_pressed
-    sprite: {fileID: 1375450590561146369, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
   - name: logo
-    sprite: {fileID: 6973341628372400424, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+    sprite: {fileID: 21300000, guid: 9a1ad1dd066fa484e9057773d45ef8fe, type: 3}
+  - name: icon_plant
+    sprite: {fileID: 21300000, guid: 73eb8c6adcee68740932b3a33a7da24c, type: 3}
+  - name: icon_water
+    sprite: {fileID: 21300000, guid: 89a19441cccf099418357144bd2e415c, type: 3}
+  - name: icon_harvest
+    sprite: {fileID: 21300000, guid: c5784401b725b334588f736d97511e6c, type: 3}
+  - name: icon_sell
+    sprite: {fileID: 21300000, guid: c02742429f44465418355481801b83d3, type: 3}
+  - name: icon_build
+    sprite: {fileID: 21300000, guid: ae3fa848a5708a04dbcc6b42e1445392, type: 3}
+  - name: icon_remove
+    sprite: {fileID: 21300000, guid: 590e9b02dab3fc046aa1e03b5b65a0da, type: 3}
+  - name: icon_upgrade
+    sprite: {fileID: 21300000, guid: ecfd449de7964cc45b60378eff34d7e3, type: 3}
+  - name: icon_inventory
+    sprite: {fileID: 21300000, guid: cc82bd7222d203449b62814653ad0c84, type: 3}
+  - name: icon_wheat
+    sprite: {fileID: 21300000, guid: cb8df30b7a3a2ec46bf83d8185aa3dba, type: 3}
+  - name: icon_carrot
+    sprite: {fileID: 21300000, guid: 367d2845a93d7e940bcde1833adb3d58, type: 3}
+  - name: icon_apple
+    sprite: {fileID: 21300000, guid: 3b78e9b324b063f4387216a1296fe923, type: 3}
+  - name: icon_lettuce
+    sprite: {fileID: 21300000, guid: c2c5a441922f16b4d9a813ccc802e51c, type: 3}
+  - name: icon_chicken
+    sprite: {fileID: 21300000, guid: d5f35697742f9f24386df9952c68d77c, type: 3}
+  - name: icon_cow
+    sprite: {fileID: 21300000, guid: f5d71218a5f4d5d4a800e6870e06bb5a, type: 3}
+  - name: icon_rabbit
+    sprite: {fileID: 21300000, guid: df2850f8c796fe1479deb972d87ec312, type: 3}
+  - name: icon_egg
+    sprite: {fileID: 21300000, guid: 6e9d91f5bf8991947b585474535b6bd8, type: 3}
+  - name: icon_milk
+    sprite: {fileID: 21300000, guid: 0ef96d6e8ef63124dafb4df9140dcf04, type: 3}
+  - name: icon_wool
+    sprite: {fileID: 21300000, guid: e084c9e49feb5914087d6f7d27efae3e, type: 3}
+  - name: icon_flour
+    sprite: {fileID: 21300000, guid: 6cba4730aa987e1419f76b33e3f420b0, type: 3}
+  - name: icon_bread
+    sprite: {fileID: 21300000, guid: 85b04c6e6b54732419c809bc2cf9f8e2, type: 3}
+  - name: icon_cheese
+    sprite: {fileID: 21300000, guid: f4d43cc62dba5e74089c830625a4e571, type: 3}
+  - name: icon_jam
+    sprite: {fileID: 21300000, guid: 3c3c73b9bdc743f4f967b5fd5933851d, type: 3}
+  - name: icon_coin
+    sprite: {fileID: 21300000, guid: 66d67d042aa743548b43d5ce0b92b94d, type: 3}
+  - name: icon_gem
+    sprite: {fileID: 21300000, guid: 9f949a6903e6d244a932dd16a7c4c56d, type: 3}
+  - name: icon_home
+    sprite: {fileID: 21300000, guid: 6dfd34b4bea2f7f42acf5843c8393f45, type: 3}
+  - name: icon_shop
+    sprite: {fileID: 21300000, guid: d29d217a17775944fa87af7f0054d035, type: 3}
+  - name: icon_settings
+    sprite: {fileID: 21300000, guid: f376fce6bfb00ac44b9291b0b1fe2ba1, type: 3}
+  - name: icon_profile
+    sprite: {fileID: 21300000, guid: fe19cf7d8a7bec84c8467440c56e2fcf, type: 3}
+  - name: btn_primary_normal
+    sprite: {fileID: 21300000, guid: bba466c41d366a847abec32c7d6c51b2, type: 3}
+  - name: btn_primary_pressed
+    sprite: {fileID: 21300000, guid: ac24bef64e83abb4eb3eabb32f5a4ab3, type: 3}
+  - name: icon_lock
+    sprite: {fileID: 21300000, guid: cd6ba3479f3d7144c9146a4d58c637fe, type: 3}
+  - name: icon_workers
+    sprite: {fileID: 21300000, guid: 817c985f5ff6d3543b9e5168a458d321, type: 3}
+  - name: icon_orders
+    sprite: {fileID: 21300000, guid: 7c99db188b1820d4dab5ee8161856404, type: 3}
+  - name: icon_expansion
+    sprite: {fileID: 21300000, guid: 1f16eded290ee9a4bac8122a8d23e23a, type: 3}
+  - name: icon_achievement
+    sprite: {fileID: 21300000, guid: af0b560820819aa4abcd1bb7a8a04599, type: 3}
+  - name: avatar_01
+    sprite: {fileID: 21300000, guid: 83cae2264061f464eaf3e903db23a045, type: 3}
+  - name: avatar_02
+    sprite: {fileID: 21300000, guid: 45dcdb917ee344d43a9171aab00c6c3e, type: 3}
+  - name: avatar_03
+    sprite: {fileID: 21300000, guid: b6f3cd82d7366f748b0f2497b8df243f, type: 3}
+  - name: avatar_04
+    sprite: {fileID: 21300000, guid: fc9ba21cccde1df4cb2deb7963e00a6d, type: 3}
+  - name: avatar_05
+    sprite: {fileID: 21300000, guid: d1b279f7e5ff11d419467d9028840e77, type: 3}
+  - name: avatar_06
+    sprite: {fileID: 21300000, guid: ea6289baa0e2b744696b827433ee21b3, type: 3}
   - name: all-assets
-    sprite: {fileID: -4165668218423927518, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+    sprite: {fileID: 21300000, guid: 9a1ad1dd066fa484e9057773d45ef8fe, type: 3}
   - name: crop_apple_growing_01
     sprite: {fileID: 652431313115616258, guid: 5367c4fbe4e323a41a45dfc3a7347f39, type: 3}
   - name: crop_apple_grown_01
@@ -635,14 +655,6 @@ MonoBehaviour:
   - name: building_fence_day
     sprite: {fileID: 0}
   - name: building_fence_night
-    sprite: {fileID: 0}
-  - name: icon_workers
-    sprite: {fileID: 0}
-  - name: icon_orders
-    sprite: {fileID: 0}
-  - name: icon_expansion
-    sprite: {fileID: 0}
-  - name: icon_achievement
     sprite: {fileID: 0}
   - name: icon_notifications
     sprite: {fileID: 0}

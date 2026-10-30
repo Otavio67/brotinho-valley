@@ -20,7 +20,8 @@ namespace Brotinho.Editor
         [MenuItem("Brotinho/Build foundation assets and scenes")]
         public static void Build()
         {
-            Directory.CreateDirectory(Root + "Data"); Directory.CreateDirectory("Assets/Scenes"); Directory.CreateDirectory("Assets/Prefabs"); Directory.CreateDirectory("Assets/Art/Atlases");
+            if (Resources.Load<TMP_FontAsset>("Fonts & Materials/LiberationSans SDF") == null) { ImportFonts(Build); return; }
+            Directory.CreateDirectory(Root + "Data"); Directory.CreateDirectory("Assets/Scenes"); Directory.CreateDirectory(Root + "Prefabs"); Directory.CreateDirectory("Assets/Art/Atlases");
             BackgroundRemoval.Run(); BuildArt(); BuildData(); BuildScenes(); BuildPrefabs();
             var pipeline = AssetDatabase.LoadAssetAtPath<UniversalRenderPipelineAsset>("Assets/Settings/UniversalRP.asset");
             GraphicsSettings.defaultRenderPipeline = pipeline; QualitySettings.renderPipeline = pipeline;
@@ -31,10 +32,35 @@ namespace Brotinho.Editor
             PlayerSettings.allowedAutorotateToPortraitUpsideDown = false;
             PlayerSettings.SetApplicationIdentifier(UnityEditor.Build.NamedBuildTarget.Android, "com.brotinho.valley");
             PlayerSettings.SetApplicationIdentifier(UnityEditor.Build.NamedBuildTarget.iOS, "com.brotinho.valley");
-            // TMP resource import without blocking the Editor with a modal package dialog.
-            if (Resources.Load<TMP_FontAsset>("Fonts & Materials/LiberationSans SDF") == null) TMP_PackageResourceImporter.ImportResources(true, false, false);
             AssetDatabase.SaveAssets(); AssetDatabase.Refresh();
             UnityEngine.Debug.Log("BROTINHO_BUILD_OK");
+        }
+        public static void BuildAndExit()
+        {
+            void Complete()
+            {
+                try { Build(); EditorApplication.Exit(0); }
+                catch (Exception error) { UnityEngine.Debug.LogException(error); EditorApplication.Exit(1); }
+            }
+            if (Resources.Load<TMP_FontAsset>("Fonts & Materials/LiberationSans SDF") == null) ImportFonts(Complete); else Complete();
+        }
+        static void ImportFonts(Action completed)
+        {
+            if (Resources.Load<TMP_FontAsset>("Fonts & Materials/LiberationSans SDF") != null) { completed(); return; }
+            // This package's importer searches the Asset Store layout, not its UPM cache path.
+            // Stage the official resource archive there, then use the supported non-interactive importer.
+            var package = UnityEditor.PackageManager.PackageInfo.FindForAssembly(typeof(TMP_Text).Assembly);
+            string archive = Path.Combine(package.resolvedPath, "Package Resources/TMP Essential Resources.unitypackage");
+            string folder = "Assets/TextMesh Pro/Package Resources"; Directory.CreateDirectory(folder); Directory.CreateDirectory("Assets/TextMesh Pro/Editor Resources");
+            File.Copy(archive, folder + "/TMP Essential Resources.unitypackage", true);
+            void Imported(string name)
+            {
+                if (name != "TMP Essential Resources") return;
+                AssetDatabase.importPackageCompleted -= Imported;
+                AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport); completed();
+            }
+            AssetDatabase.importPackageCompleted += Imported;
+            TMP_PackageResourceImporter.ImportResources(true, false, false);
         }
         static T Save<T>(T asset, string path) where T : ScriptableObject
         {
@@ -97,7 +123,7 @@ namespace Brotinho.Editor
             art.Clear(); missing.Clear();
             // A generated neutral fallback is used exclusively for missing assets, never as a replacement for supplied art.
             var fallbackTexture = new Texture2D(32, 32); var pixels = Enumerable.Repeat(new Color(.75f, .55f, .8f), 1024).ToArray(); fallbackTexture.SetPixels(pixels); fallbackTexture.Apply();
-            File.WriteAllBytes("Assets/Art/fallback.png", fallbackTexture.EncodeToPNG()); UnityEngine.Object.DestroyImmediate(fallbackTexture); AssetDatabase.Refresh();
+            BackgroundRemoval.WriteIfChanged("Assets/Art/fallback.png", fallbackTexture.EncodeToPNG()); UnityEngine.Object.DestroyImmediate(fallbackTexture); AssetDatabase.Refresh();
             var fi = (TextureImporter)AssetImporter.GetAtPath("Assets/Art/fallback.png"); fi.textureType = TextureImporterType.Sprite; fi.spritePixelsPerUnit = 32; fi.SaveAndReimport();
             var library = ScriptableObject.CreateInstance<SpriteLibrary>(); library.fallback = AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/fallback.png");
             foreach (string file in Directory.GetFiles("Assets/Art/Source", "*.jpeg"))
@@ -145,17 +171,31 @@ namespace Brotinho.Editor
                     void Piece(string key, float x, float y, float width, float height) => Add(key, new Rect(x * sx, h - (y + height) * sy, width * sx, height * sy));
                     Piece("logo", 26, 50, 294, 139);
                     string[] actions = { "plant", "water", "harvest", "sell", "build", "remove", "upgrade", "inventory" };
-                    for (int i = 0; i < actions.Length; i++) Piece("icon_" + actions[i], 708 + i % 4 * 52, 73 + i / 4 * 64, 46, 46);
+                    for (int i = 0; i < actions.Length; i++) Piece("icon_" + actions[i], 705 + i % 4 * 51, 73 + i / 4 * 64, 46, 46);
                     string[] goods = { "wheat", "carrot", "apple", "lettuce", "chicken", "cow", "rabbit", "egg", "milk", "wool" };
                     for (int i = 0; i < goods.Length; i++) Piece("icon_" + goods[i], 925 + i % 5 * 50, 73 + i / 5 * 64, 45, 45);
                     string[] products = { "flour", "bread", "cheese", "jam" };
                     for (int i = 0; i < 4; i++) Piece("icon_" + products[i], 709 + i * 51, 243, 44, 44);
                     Piece("icon_coin", 1200, 73, 47, 47); Piece("icon_gem", 1251, 73, 47, 47);
-                    string[] ui = { "home", "shop", "settings", "profile" }; for (int i = 0; i < 4; i++) Piece("icon_" + ui[i], 1180 + i * 48, 243, 42, 42);
+                    string[] ui = { "home", "shop", "settings", "profile" }; for (int i = 0; i < 4; i++) Piece("icon_" + ui[i], 1146 + i * 51, 243, 46, 46);
                     Piece("btn_primary_normal", 36, 538, 87, 37); Piece("btn_primary_pressed", 140, 538, 87, 37); Piece("icon_lock", 379, 680, 58, 62);
+                    Piece("icon_workers", 1096, 311, 45, 45); Piece("icon_orders", 1198, 311, 45, 45); Piece("icon_expansion", 974, 245, 46, 46); Piece("icon_achievement", 1301, 311, 45, 45);
+                    for (int i = 0; i < 6; i++) Piece("avatar_" + (i + 1).ToString("00"), 1176 + i % 3 * 58, 441 + i / 3 * 54, 55, 54);
                 }
                 else Add(id == "bright-sky" ? "bg_sky_day" : id == "night_sky" ? "bg_sky_night" : id == "afternoon-sky" ? "bg_sky_dusk" : id, new Rect(0, 0, w, h));
-                var sprites = Slice(path, names.ToArray(), rectangles.ToArray());
+                Sprite[] sprites;
+                if (id == "all-assets")
+                {
+                    var cuts = BackgroundRemoval.CutoutUI(path, names.ToArray(), rectangles.ToArray()); var list = new List<Sprite>();
+                    foreach (string cut in cuts)
+                    {
+                        var ti = (TextureImporter)AssetImporter.GetAtPath(cut); ti.textureType = TextureImporterType.Sprite; ti.spriteImportMode = SpriteImportMode.Single; ti.spritePixelsPerUnit = 150; ti.mipmapEnabled = false; ti.alphaIsTransparency = true; ti.filterMode = FilterMode.Bilinear; ti.textureCompression = TextureImporterCompression.Uncompressed;
+                        if (Path.GetFileName(cut).StartsWith("btn_")) ti.spriteBorder = new Vector4(14, 10, 14, 10);
+                        ti.SaveAndReimport(); list.Add(AssetDatabase.LoadAssetAtPath<Sprite>(cut));
+                    }
+                    sprites = list.ToArray();
+                }
+                else sprites = Slice(path, names.ToArray(), rectangles.ToArray());
                 foreach (var sprite in sprites) Map(sprite.name, sprite);
                 if (sprites.Length > 0) Map(id, sprites[0]);
             }
@@ -166,12 +206,13 @@ namespace Brotinho.Editor
             foreach (string group in new[] { "Crops", "Animals", "UI" })
             {
                 string prefix = group == "Crops" ? "crop_" : group == "Animals" ? "animal_" : "icon_";
-                var atlas = new SpriteAtlas(); SpriteAtlasExtensions.Add(atlas, art.Where(e => e.name.StartsWith(prefix)).Select(e => (UnityEngine.Object)e.sprite).Distinct().ToArray());
+                var atlas = new SpriteAtlas { name = group }; SpriteAtlasExtensions.Add(atlas, art.Where(e => e.name.StartsWith(prefix)).Select(e => (UnityEngine.Object)e.sprite).Distinct().ToArray());
                 SpriteAtlasExtensions.SetPackingSettings(atlas, new SpriteAtlasPackingSettings { padding = 4, enableRotation = false, enableTightPacking = false });
                 string path = "Assets/Art/Atlases/" + group + ".spriteatlas";
                 if (!File.Exists(path)) AssetDatabase.CreateAsset(atlas, path); else { var existing = AssetDatabase.LoadAssetAtPath<SpriteAtlas>(path); EditorUtility.CopySerialized(atlas, existing); EditorUtility.SetDirty(existing); }
             }
             var material = new Material(Shader.Find("Universal Render Pipeline/2D/Sprite-Lit-Default"));
+            material.name = "FarmSprite"; material.mainTextureScale = Vector2.one;
             string matPath = Root + "FarmSprite.mat"; var old = AssetDatabase.LoadAssetAtPath<Material>(matPath);
             if (old == null) AssetDatabase.CreateAsset(material, matPath); else { EditorUtility.CopySerialized(material, old); EditorUtility.SetDirty(old); }
             File.WriteAllText("MISSING_ASSETS.md", "# Missing assets\n\nThe 21 supplied JPEG sources are preserved without renames. Transparent PNG derivatives remove only edge-connected green backgrounds. Sprite names are imported subasset aliases.\n\n## Fallback sprites\n\n" + string.Join("\n", missing.Select(x => "- `" + x + ".png`")) + "\n\n## Audio (silence until supplied)\n\n" + string.Join("\n", Enum.GetNames(typeof(SfxEvent)).Select(x => "- `sfx_" + x.ToLowerInvariant() + ".wav`")) + "\n- `music_day.ogg`\n- `music_night.ogg`\n\nClean production exports with native alpha are still desirable; the supplied JPEG sheets have compression edges and irregular frame spacing. Sky and terrain backgrounds are intentionally opaque.\n");
@@ -201,10 +242,11 @@ namespace Brotinho.Editor
             foreach (string name in new[] { "Player", "Crop", "Animal", "Building", "Worker" })
             {
                 var go = new GameObject(name, typeof(SpriteRenderer)); go.GetComponent<SpriteRenderer>().sprite = AssetDatabase.LoadAssetAtPath<SpriteLibrary>(Root + "SpriteLibrary.asset").fallback;
-                PrefabUtility.SaveAsPrefabAsset(go, "Assets/Prefabs/" + name + ".prefab"); UnityEngine.Object.DestroyImmediate(go);
+                if (name == "Player") go.AddComponent<PlayerMovement>(); if (name == "Animal") go.AddComponent<AnimalBehavior>();
+                PrefabUtility.SaveAsPrefabAsset(go, Root + "Prefabs/" + name + ".prefab"); UnityEngine.Object.DestroyImmediate(go);
             }
             var panel = new GameObject("Panel", typeof(RectTransform), typeof(CanvasGroup), typeof(PanelBase));
-            PrefabUtility.SaveAsPrefabAsset(panel, "Assets/Prefabs/Panel.prefab"); UnityEngine.Object.DestroyImmediate(panel);
+            PrefabUtility.SaveAsPrefabAsset(panel, Root + "Prefabs/Panel.prefab"); UnityEngine.Object.DestroyImmediate(panel);
         }
         public static void Verify()
         {

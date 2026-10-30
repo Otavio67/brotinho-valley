@@ -10,7 +10,7 @@ The Editor menu **Brotinho > Build foundation assets and scenes** regenerates de
 
 ## Current milestone
 
-Current implementation: v0.4.0 — workers, energy, automation and bounded offline progress. Subsequent targets: v0.5 complete UI shell; v0.6 save/recovery, localization and tutorial validation.
+Current implementation: v0.5.0 — full UI panel shell, portrait navigation, player movement, lighting and audio hooks. Remaining milestone: v0.6 save/recovery, localization and tutorial validation.
 
 ## Assets
 

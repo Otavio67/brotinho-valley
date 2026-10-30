@@ -6,12 +6,14 @@ using UnityEngine.InputSystem.UI;
 namespace Brotinho
 {
     // A responsive uGUI shell. Feature panels are populated from the same data used by the simulation.
-    public partial class GameUI : MonoBehaviour
+    public partial class GameUI : PanelBase
     {
         public static bool ModalOpen { get; private set; }
         GameManager manager;
         RectTransform safe, top, bottom, modal, content;
         TextMeshProUGUI hud, toast;
+        TextMeshProUGUI objective, placementHint;
+        RectTransform placementControls;
         string scene, currentPanel;
         float toastUntil;
         TMP_FontAsset font;
@@ -24,12 +26,18 @@ namespace Brotinho
             gameObject.AddComponent<UnityEngine.UI.GraphicRaycaster>();
             if (FindAnyObjectByType<EventSystem>() == null) { var e = new GameObject("EventSystem"); e.AddComponent<EventSystem>(); e.AddComponent<InputSystemUIInputModule>(); }
             font = Resources.Load<TMP_FontAsset>("Fonts & Materials/LiberationSans SDF");
+            if (scene != "Farm")
+            {
+                var sky = Rect("SkyBackdrop", transform); Stretch(sky); var image = sky.gameObject.AddComponent<UnityEngine.UI.Image>(); image.sprite = manager.Art.Get("bg_sky_day"); image.raycastTarget = false;
+                var aspect = sky.gameObject.AddComponent<UnityEngine.UI.AspectRatioFitter>(); aspect.aspectMode = UnityEngine.UI.AspectRatioFitter.AspectMode.EnvelopeParent; aspect.aspectRatio = image.sprite.rect.width / image.sprite.rect.height;
+            }
             safe = Rect("SafeArea", transform); Stretch(safe); safe.gameObject.AddComponent<SafeArea>();
             top = Box(safe, new Vector2(0, .85f), Vector2.one, new Color(.98f, .94f, .79f, .98f)); Layout(top);
             bottom = Box(safe, Vector2.zero, new Vector2(1, .20f), new Color(.98f, .94f, .79f, .98f)); Layout(bottom);
-            if (scene == "Farm") FarmHUD(); else MainMenu();
+            if (scene == "Farm") FarmHUD(); else if (scene == "Boot") Splash(); else MainMenu();
             toast = Label(safe, "", 32); toast.rectTransform.anchorMin = new Vector2(.05f, .72f); toast.rectTransform.anchorMax = new Vector2(.95f, .80f);
             toast.rectTransform.offsetMin = toast.rectTransform.offsetMax = Vector2.zero; toast.alignment = TextAlignmentOptions.Center;
+            toast.gameObject.AddComponent<PanelBase>();
             manager.Game.Bus.Toast += ShowToast; manager.Game.Bus.Changed += Refresh; manager.Game.Bus.OpenPanel += Open;
             Refresh();
         }
@@ -54,39 +62,49 @@ namespace Brotinho
             var rect = Rect("Text", parent); var label = rect.gameObject.AddComponent<TextMeshProUGUI>(); label.font = font;
             label.text = text; label.fontSize = size; label.color = new Color(.18f, .12f, .08f); label.raycastTarget = false;
             label.textWrappingMode = TextWrappingModes.Normal;
-            var le = rect.gameObject.AddComponent<UnityEngine.UI.LayoutElement>(); le.minHeight = size + 18; le.preferredHeight = size + 24;
+            var le = rect.gameObject.AddComponent<UnityEngine.UI.LayoutElement>(); le.minHeight = size + 18;
             return label;
         }
         void Button(Transform parent, string text, Action action)
         {
-            var rect = Rect("Button", parent); rect.gameObject.AddComponent<UnityEngine.UI.Image>().color = new Color(.82f, .9f, .57f);
-            var button = rect.gameObject.AddComponent<UnityEngine.UI.Button>(); var layout = rect.gameObject.AddComponent<UnityEngine.UI.LayoutElement>(); layout.minHeight = 74;
+            var rect = Rect("Button", parent); var image = rect.gameObject.AddComponent<UnityEngine.UI.Image>(); image.sprite = manager.Art.Get("btn_primary_normal"); image.type = UnityEngine.UI.Image.Type.Sliced;
+            // The supplied reference button contains baked Portuguese lettering; a localized label covers its center.
+            var center = Rect("LocalizedCenter", rect); center.anchorMin = Vector2.zero; center.anchorMax = Vector2.one; center.offsetMin = new Vector2(8, 6); center.offsetMax = new Vector2(-8, -6); center.gameObject.AddComponent<UnityEngine.UI.Image>().color = new Color(1, .82f, .24f); center.GetComponent<UnityEngine.UI.Image>().raycastTarget = false;
+            var button = rect.gameObject.AddComponent<UnityEngine.UI.Button>(); var layout = rect.gameObject.AddComponent<UnityEngine.UI.LayoutElement>(); layout.minHeight = 74; layout.flexibleWidth = 1;
             var label = Label(rect, text, 30); Stretch(label.rectTransform); label.alignment = TextAlignmentOptions.Center;
             button.onClick.AddListener(() => { manager.Game.Bus.Play(SfxEvent.Click); action(); });
         }
         void MainMenu()
         {
-            Label(top, L("game_name"), 54);
+            Icon(top, "logo", 160);
+            bottom.gameObject.SetActive(false);
             if (scene == "RegionSelect")
             {
                 var area = Box(safe, new Vector2(.06f, .23f), new Vector2(.94f, .83f), new Color(1, .98f, .9f)); Layout(area);
                 foreach (var region in manager.Game.Data.regions)
                 { string id = region.id; Button(area, L("region_" + id), () => manager.ChooseRegion(id)); Label(area, L("trait_" + id), 26); }
             }
-            else { Button(bottom, L("play"), manager.Play); Button(bottom, L("continue"), manager.Play); }
+            else
+            {
+                var center = Box(safe, new Vector2(.10f, .24f), new Vector2(.90f, .81f), new Color(1, .97f, .86f, .96f)); Layout(center);
+                Label(center, L("tagline"), 36); Button(center, L("play"), manager.Play); Button(center, L("continue"), manager.Play);
+                foreach (string target in new[] { "settings", "profile", "achievements", "credits" }) { string id = target; Button(center, L(id), () => Open(id)); }
+            }
         }
+        void Splash() { Label(top, L("game_name"), 52); Label(bottom, L("loading")); Progress(bottom, () => .9f); }
         void FarmHUD()
         {
             hud = Label(top, "", 32);
-            Button(top, L("orders"), () => Open("orders"));
+            objective = Label(top, "", 28); Button(top, L("orders"), () => Open("orders"));
             var cropRow = QuickRow(bottom);
             foreach (var crop in manager.Game.Data.crops)
             { var id = crop.id; Button(cropRow, L("crop_" + id), () => { manager.SelectedCrop = id; manager.Tool = PlayerTool.Plant; ShowToast("plant"); }); }
-            var toolRow = QuickRow(bottom);
-            Button(toolRow, L("water"), () => manager.Tool = PlayerTool.Water); Button(toolRow, L("harvest"), () => manager.Tool = PlayerTool.Harvest);
-            var menus = QuickRow(bottom); foreach (string id in new[] { "build", "shop", "inventory", "workers", "animals", "processing" }) { string target = id; Button(menus, L(id), () => Open(target)); }
-            Button(toolRow, L("confirm"), () => { if (manager.Placement != null && ConstructionService.Place(manager.Game, manager.Placement, manager.PlacementTile.x, manager.PlacementTile.y, manager.Rotation)) manager.Placement = null; });
-            Button(toolRow, L("rotate"), () => manager.Rotation = (manager.Rotation + 1) % 4); Button(toolRow, L("cancel"), () => manager.Placement = null);
+            var toolRow = QuickRow(bottom); foreach (PlayerTool tool in Enum.GetValues(typeof(PlayerTool))) { var selected = tool; Button(toolRow, L(tool.ToString().ToLowerInvariant()), () => { manager.Tool = selected; ShowToast(selected.ToString().ToLowerInvariant()); }); }
+            var menus = QuickRow(bottom); foreach (string id in new[] { "build", "shop", "inventory", "workers", "menu" }) { string target = id; Button(menus, L(id), () => Open(target)); }
+            placementControls = Box(safe, new Vector2(.02f, .22f), new Vector2(.98f, .36f), new Color(1, .97f, .86f, .97f)); Layout(placementControls);
+            placementHint = Label(placementControls, "", 28); var placementRow = QuickRow(placementControls);
+            Button(placementRow, L("confirm"), () => { if (manager.Placement != null && ConstructionService.Place(manager.Game, manager.Placement, manager.PlacementTile.x, manager.PlacementTile.y, manager.Rotation)) manager.Placement = null; });
+            Button(placementRow, L("rotate"), () => manager.Rotation = (manager.Rotation + 1) % 4); Button(placementRow, L("cancel"), () => manager.Placement = null);
         }
         RectTransform QuickRow(Transform parent)
         {
@@ -95,41 +113,23 @@ namespace Brotinho
         }
         void Refresh()
         {
-            if (hud == null) return;
+            if (hud == null) { for (int i = 0; i < bindings.Count; i++) bindings[i](); return; }
             var s = manager.Game.State;
             hud.text = L("coins") + " " + s.coins + "   " + L("gems") + " " + s.gems + "\n" + L("day") + " " + (TimeManager.Day(s.elapsed) + 1) + " · " + TimeManager.Hour(s.elapsed).ToString("00") + ":00 · " + L("weather_" + WeatherSystem.At(s.elapsed).ToString().ToLowerInvariant());
+            if (objective != null) objective.text = L("tutorial_" + s.tutorial);
+            for (int i = 0; i < bindings.Count; i++) bindings[i]();
         }
-        public void Open(string panel)
-        {
-            if (modal != null) Destroy(modal.gameObject); currentPanel = panel; ModalOpen = true;
-            modal = Box(safe, new Vector2(.06f, .22f), new Vector2(.94f, .84f), new Color(1, .97f, .86f)); Layout(modal);
-            Label(modal, L(panel), 38); Button(modal, L("close"), () => { Destroy(modal.gameObject); ModalOpen = false; });
-            var game = manager.Game;
-            if (panel == "shop") foreach (var crop in game.Data.crops) { string id = crop.id; Button(modal, L("crop_" + id) + " · " + crop.seedCost, () => ShopManager.BuySeeds(game, id)); }
-            if (panel == "inventory" || panel == "sell") foreach (var product in game.Data.products)
-            {
-                if (game.State.Count(product.id) == 0) continue; string id = product.id;
-                Button(modal, L(game.Data.Crop(id) != null ? "crop_" + id : "product_" + id) + " ×" + game.State.Count(id) + " · " + L("sell_all") + " " + PriceTable.Quote(game, id, game.State.Count(id)), () => { SellManager.Sell(game, id, game.State.Count(id)); Open(panel); });
-            }
-            if (panel == "orders") foreach (var order in game.State.orders) { string id = order.id; Button(modal, L("crop_" + order.product) + " ×" + order.quantity + " → " + order.reward + " " + L("coins"), () => { OrderManager.Complete(game, id); Open(panel); }); }
-            if (panel == "build") foreach (var b in game.Data.buildings) { string id = b.id; Button(modal, L("building_" + id) + " · " + ConstructionService.Cost(game, b), () => { manager.Placement = id; Destroy(modal.gameObject); ModalOpen = false; }); }
-            if (panel == "animals")
-            {
-                foreach (var a in game.Data.animals) { string id = a.id; Button(modal, L("animal_" + id) + " · " + a.cost, () => { ProductionController.Buy(game, id); Open(panel); }); }
-                foreach (var a in game.State.animals) { var animal = a; Button(modal, L("feed") + " · " + a.feed, () => ProductionController.Feed(game, animal)); Button(modal, L("collect") + " · " + a.ready, () => ProductionController.Collect(game, animal)); }
-            }
-            if (panel == "processing") foreach (var b in game.State.buildings) if (game.Data.Building(b.definition).processSeconds > 0)
-            { var building = b; Button(modal, L("building_" + b.definition) + " · " + L("queue") + " " + b.queue, () => ProcessingBuilding.Enqueue(game, building)); Button(modal, L("collect"), () => ProcessingBuilding.Collect(game, building)); }
-            if (panel == "workers")
-            {
-                Button(modal, L("hire") + " · " + WorkerAI.HireCost(game.State.workers.Count), () => { WorkerAI.Hire(game); Open(panel); });
-                foreach (var w in game.State.workers) { var worker = w; Button(modal, L("worker_" + w.definition) + " · " + (int)w.energy + "%", () => { worker.task = (WorkerTask)(((int)worker.task + 1) % 5); Open(panel); }); Label(modal, L("task_" + w.task.ToString().ToLowerInvariant())); }
-            }
-            if (panel == "afk" && manager.Offline != null) Label(modal, L("harvest") + " " + manager.Offline.harvests + "\n" + L("production") + " " + manager.Offline.production + "\n" + L("sell") + " " + manager.Offline.sales + "\n" + L("coins") + " +" + manager.Offline.coins);
-            modal.GetComponent<PanelBase>().Open();
-        }
+        public void Open(string panel) => ShowPanel(panel);
         void ShowToast(string key) { if (toast == null) return; toast.text = L(key); toastUntil = Time.unscaledTime + 2.5f; }
-        void Update() { if (toast != null && Time.unscaledTime > toastUntil) toast.text = ""; }
+        void Update()
+        {
+            if (toast != null && Time.unscaledTime > toastUntil) toast.text = "";
+            if (placementControls != null)
+            {
+                placementControls.gameObject.SetActive(manager.Placement != null);
+                if (manager.Placement != null) placementHint.text = L("building_" + manager.Placement) + " · " + L("build_hint");
+            }
+        }
         void OnDestroy()
         {
             ModalOpen = false; if (manager == null) return;

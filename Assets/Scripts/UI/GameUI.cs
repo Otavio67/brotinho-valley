@@ -84,7 +84,7 @@ namespace Brotinho
             { var id = crop.id; Button(cropRow, L("crop_" + id), () => { manager.SelectedCrop = id; manager.Tool = PlayerTool.Plant; ShowToast("plant"); }); }
             var toolRow = QuickRow(bottom);
             Button(toolRow, L("water"), () => manager.Tool = PlayerTool.Water); Button(toolRow, L("harvest"), () => manager.Tool = PlayerTool.Harvest);
-            var menus = QuickRow(bottom); foreach (string id in new[] { "build", "shop", "inventory", "animals", "processing" }) { string target = id; Button(menus, L(id), () => Open(target)); }
+            var menus = QuickRow(bottom); foreach (string id in new[] { "build", "shop", "inventory", "workers", "animals", "processing" }) { string target = id; Button(menus, L(id), () => Open(target)); }
             Button(toolRow, L("confirm"), () => { if (manager.Placement != null && ConstructionService.Place(manager.Game, manager.Placement, manager.PlacementTile.x, manager.PlacementTile.y, manager.Rotation)) manager.Placement = null; });
             Button(toolRow, L("rotate"), () => manager.Rotation = (manager.Rotation + 1) % 4); Button(toolRow, L("cancel"), () => manager.Placement = null);
         }
@@ -120,6 +120,12 @@ namespace Brotinho
             }
             if (panel == "processing") foreach (var b in game.State.buildings) if (game.Data.Building(b.definition).processSeconds > 0)
             { var building = b; Button(modal, L("building_" + b.definition) + " · " + L("queue") + " " + b.queue, () => ProcessingBuilding.Enqueue(game, building)); Button(modal, L("collect"), () => ProcessingBuilding.Collect(game, building)); }
+            if (panel == "workers")
+            {
+                Button(modal, L("hire") + " · " + WorkerAI.HireCost(game.State.workers.Count), () => { WorkerAI.Hire(game); Open(panel); });
+                foreach (var w in game.State.workers) { var worker = w; Button(modal, L("worker_" + w.definition) + " · " + (int)w.energy + "%", () => { worker.task = (WorkerTask)(((int)worker.task + 1) % 5); Open(panel); }); Label(modal, L("task_" + w.task.ToString().ToLowerInvariant())); }
+            }
+            if (panel == "afk" && manager.Offline != null) Label(modal, L("harvest") + " " + manager.Offline.harvests + "\n" + L("production") + " " + manager.Offline.production + "\n" + L("sell") + " " + manager.Offline.sales + "\n" + L("coins") + " +" + manager.Offline.coins);
             modal.GetComponent<PanelBase>().Open();
         }
         void ShowToast(string key) { if (toast == null) return; toast.text = L(key); toastUntil = Time.unscaledTime + 2.5f; }

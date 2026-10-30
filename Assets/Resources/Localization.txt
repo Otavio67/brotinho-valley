@@ -79,3 +79,23 @@ product_bread	Pão	Bread
 product_cheese	Queijo	Cheese
 product_jam	Geleia	Jam
 product_wood	Madeira	Wood
+workers	Trabalhadores	Workers
+hire	Contratar	Hire
+worker_limit	Todas as vagas estão ocupadas.	All worker slots are occupied.
+worker_luna	Luna	Luna
+worker_bento	Bento	Bento
+worker_flora	Flora	Flora
+worker_nico	Nico	Nico
+task_rest	Descansar	Rest
+task_farm	Plantar e colher	Plant and harvest
+task_animals	Cuidar dos animais	Care for animals
+task_process	Processar produtos	Process goods
+task_sell	Vender no mercado	Sell at the market
+afk	Enquanto você estava fora	While you were away
+production	Produção	Production
+hungry_animals	Alguns animais precisam de comida.	Some animals need feeding.
+output_waiting	Há produtos esperando coleta.	Some products need collecting.
+save_failed	Não foi possível salvar. Tente novamente.	Could not save. Please retry.
+save_recovered	Arquivo de segurança recuperado.	Recovered the backup save.
+save_corrupt	O arquivo está danificado. Seus dados foram preservados; o salvamento está suspenso.	The save is damaged. Your files are preserved; saving is suspended.
+save_newer_version	Este save pertence a uma versão mais nova. Seus arquivos foram preservados.	This save belongs to a newer version. Your files were preserved.

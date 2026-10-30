@@ -9,7 +9,7 @@ namespace Brotinho
             var home = game.State.buildings.Find(b => b.definition == data.housing && !game.State.animals.Exists(a => a.building == b.id));
             if (home == null) return game.Fail("needs_housing");
             if (!Wallet.Spend(game.State, data.cost)) return game.Fail("not_enough_coins");
-            game.State.animals.Add(new AnimalInstance { id = Guid.NewGuid().ToString("N"), definition = id, building = home.id }); game.Bus.Play(SfxEvent.Buy); game.Bus.Refresh(); return true;
+            game.State.animals.Add(new AnimalInstance { id = game.NextId("animal"), definition = id, building = home.id }); game.Bus.Play(SfxEvent.Buy); game.Bus.Refresh(); return true;
         }
         public static void Tick(GameSession game, AnimalInstance animal)
         {

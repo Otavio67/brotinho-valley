@@ -19,7 +19,7 @@ namespace Brotinho
             if (LevelSystem.Level(State.xp) < crop.unlockLevel) return Fail("locked");
             // Forest apple saplings are free and do not consume stock, as requested.
             if (!(State.region == "forest" && cropId == "apple") && !State.Take("seed_" + cropId, 1)) return Fail("no_seeds");
-            State.crops.Add(new CropInstance { id = Guid.NewGuid().ToString("N"), definition = cropId, x = x, y = y });
+            State.crops.Add(new CropInstance { id = NextId("crop"), definition = cropId, x = x, y = y });
             Bus.Play(SfxEvent.Plant); Bus.Refresh(); return true;
         }
         public bool Water(int x, int y)
@@ -33,6 +33,7 @@ namespace Brotinho
             State.crops.Remove(crop); Bus.Refresh(); return true;
         }
         public bool Fail(string key) { Bus.Notify(key); Bus.Play(SfxEvent.Error); return false; }
+        public string NextId(string prefix) => prefix + "_" + State.entitySequence++;
         public void AddXp(int amount)
         {
             int old = LevelSystem.Level(State.xp); State.xp += amount;

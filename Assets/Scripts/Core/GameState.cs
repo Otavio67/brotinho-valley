@@ -24,7 +24,7 @@ namespace Brotinho
         public bool sound = true, music = true, vibration = true, notifications;
         public int playerX = 10, playerY = 10;
         public long harvested, sold, produced, ordersCompleted;
-        public int dailyDay = -1, orderSerial;
+        public int dailyDay = -1, orderSerial, entitySequence;
         public long dailyHarvestBase, dailySalesBase, dailyOrdersBase;
         public List<string> dailyClaimed = new List<string>();
         public List<string> claimedAchievements = new List<string>();

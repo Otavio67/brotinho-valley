@@ -15,7 +15,7 @@ namespace Brotinho
             if (!Unlocked(game, data)) return game.Fail("locked");
             if (!PlacementValidator.CanPlace(game.Grid, game.Data, data, x, y, rotation)) return game.Fail("invalid_placement");
             int cost = Cost(game, data); if (!Wallet.Spend(game.State, cost)) return game.Fail("not_enough_coins");
-            var building = new BuildingInstance { id = Guid.NewGuid().ToString("N"), definition = id, x = x, y = y, rotation = rotation % 4 };
+            var building = new BuildingInstance { id = game.NextId("building"), definition = id, x = x, y = y, rotation = rotation % 4 };
             game.State.buildings.Add(building); game.LastPlacementId = building.id; game.LastPlacementCost = cost;
             game.Bus.Play(SfxEvent.Build); game.Bus.Refresh(); return true;
         }

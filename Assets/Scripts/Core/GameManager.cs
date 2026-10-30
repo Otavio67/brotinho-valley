@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 namespace Brotinho
@@ -15,6 +16,9 @@ namespace Brotinho
         public int Rotation;
         public Vector2Int PlacementTile = new Vector2Int(8, 8);
         double accumulator;
+        SaveSystem saves;
+        double autosave;
+        bool suspended, testMode;
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
         static void StartGame()
         {
@@ -26,8 +30,11 @@ namespace Brotinho
             Instance = this; DontDestroyOnLoad(gameObject);
             Application.targetFrameRate = 60; Application.runInBackground = true;
             Art = Resources.Load<SpriteLibrary>("SpriteLibrary");
-            Game = new GameSession(GameState.New(), Resources.Load<GameDatabase>("GameDatabase"));
+            testMode = Application.isBatchMode && Array.Exists(Environment.GetCommandLineArgs(), x => x == "-runTests");
+            saves = new SaveSystem(Application.persistentDataPath);
+            Game = new GameSession(testMode ? GameState.New() : saves.Load(), Resources.Load<GameDatabase>("GameDatabase"));
             Text = new Localization(Game.State);
+            CatchUp();
             SceneManager.sceneLoaded += SceneReady;
             Game.Bus.Changed += AdvanceTutorial;
             SceneReady(SceneManager.GetActiveScene(), LoadSceneMode.Single);
@@ -38,20 +45,51 @@ namespace Brotinho
             if (scene.name == "Boot") { SceneLoader.Load("Title"); return; }
             var ui = new GameObject("Interface").AddComponent<GameUI>();
             ui.Initialize(this, scene.name);
+            if (saves.LastError != null) Game.Bus.Notify(saves.LastError);
             if (scene.name == "Farm")
             {
                 new GameObject("FarmWorld").AddComponent<FarmView>().Initialize(this);
                 Camera.main.gameObject.AddComponent<PlayerController>().Initialize(this);
+                if (Offline != null && Offline.seconds > 2) Game.Bus.Open("afk");
             }
         }
         void Update()
         {
-            if (SceneManager.GetActiveScene().name != "Farm") return;
+            if (suspended || SceneManager.GetActiveScene().name != "Farm") return;
             accumulator += Time.unscaledDeltaTime;
             if (accumulator >= 1) { var seconds = (int)accumulator; accumulator -= seconds; Simulation.Advance(Game, seconds); Game.Bus.Refresh(); }
+            autosave += Time.unscaledDeltaTime; if (autosave >= 30) { autosave = 0; SaveNow(); }
         }
         public void Play() => SceneLoader.Load(string.IsNullOrEmpty(Game.State.region) ? "RegionSelect" : "Farm");
-        public void ChooseRegion(string id) { if (Game.State.region.Length > 0) return; Game.State.region = id; SceneLoader.Load("Farm"); }
+        public void ChooseRegion(string id) { if (Game.State.region.Length > 0) return; Game.State.region = id; SaveNow(); SceneLoader.Load("Farm"); }
+        void CatchUp()
+        {
+            long now = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+            double seconds = TimeManager.OfflineSeconds(Game.State.savedUtc, now, Game.Data.offlineCapSeconds);
+            bool silent = Game.Bus.Silent; Game.Bus.Silent = true;
+            try { Offline = Simulation.Advance(Game, seconds); } finally { Game.Bus.Silent = silent; }
+            Game.State.savedUtc = now; SaveNow();
+        }
+        public void SaveNow()
+        {
+            if (Game == null || testMode) return;
+            if (accumulator > 0) { Simulation.Advance(Game, accumulator); accumulator = 0; }
+            if (!saves.Save(Game.State, DateTimeOffset.UtcNow.ToUnixTimeSeconds())) Game.Bus.Notify(saves.LastError ?? "save_failed");
+        }
+        public void ResetGame()
+        {
+            if (!testMode) saves.Reset();
+            Game = new GameSession(GameState.New(), Game.Data, Game.Bus); Text = new Localization(Game.State);
+            Offline = null; accumulator = autosave = 0; Placement = null; Tool = PlayerTool.Plant; SelectedCrop = "lettuce";
+            SaveNow(); SceneLoader.Load("Title");
+        }
+        void OnApplicationPause(bool paused)
+        {
+            if (Game == null) return;
+            if (paused) { if (!suspended) SaveNow(); suspended = true; }
+            else if (suspended) { suspended = false; CatchUp(); Game.Bus.Refresh(); if (Offline.seconds > 2) Game.Bus.Open("afk"); }
+        }
+        void OnApplicationQuit() => SaveNow();
         void AdvanceTutorial() { }
         void OnDestroy() { if (Instance != this) return; SceneManager.sceneLoaded -= SceneReady; Instance = null; }
     }

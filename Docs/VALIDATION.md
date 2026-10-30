@@ -19,3 +19,8 @@ Environment: Windows 11, Unity 6 LTS 6000.3.27f1. Baseline: empty repository, no
 
 - `Tools/Validate.ps1 -Mode EditMode`: Unity compilation succeeded; 22 passed, 0 failed, 0 skipped.
 - New cases prove housing restrictions and discounts, exact undo refunds, hunger pause/feed consumption, fractional regional yields, reserved processing inputs, full output blocking and water-wheel acceleration.
+
+## v0.4.0
+
+- `Tools/Validate.ps1 -Mode EditMode`: Unity compilation succeeded; 28 passed, 0 failed, 0 skipped.
+- New cases prove hire costs/slot limits, zone-restricted harvesting/planting, automatic energy recovery, deterministic 300×1s versus 1×300s simulation, required market access and bounded 8-hour catch-up with hunger reporting.

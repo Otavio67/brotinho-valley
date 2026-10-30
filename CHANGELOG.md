@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.0] — 2026-10-30
+
+- Add worker hiring, zone-limited farming/animal/processing/selling tasks, energy slowdown and automatic rest.
+- Share fixed-step rules between running and offline play, persist fractional time and deterministic entity IDs, cap catch-up at eight hours and summarize issues.
+- Add timestamped JSON persistence and 30-second/pause/quit autosaving to support real close/reopen AFK progress; full recovery tests follow in v0.6.0.
+
 ## [0.3.0] — 2026-10-30
 
 - Add snap/rotate/validate building placement, untouched-placement undo and regional construction costs.

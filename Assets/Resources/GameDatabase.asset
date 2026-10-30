@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c02cb6542e064d548a6e83f16e323f31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Brotinho.Runtime::Brotinho.GameDatabase
+  crops:
+  - {fileID: 11400000, guid: fda597170c58fd041aa05e36fe0c13bf, type: 2}
+  - {fileID: 11400000, guid: bfbe690594b30274ca6fe33cd1a198ef, type: 2}
+  - {fileID: 11400000, guid: b59f08a0a4a7e3f4e8be9c807836c27e, type: 2}
+  - {fileID: 11400000, guid: 2e29c772c10c39a4a99e4bd23839077e, type: 2}
+  buildings:
+  - {fileID: 11400000, guid: 9382a38acd44e034f95f56fc4285f3b9, type: 2}
+  - {fileID: 11400000, guid: ff0fc13f6bb868c4ab73b29058e0c7ed, type: 2}
+  - {fileID: 11400000, guid: 1f497242a2e6dd84999764c373e2dde2, type: 2}
+  - {fileID: 11400000, guid: cbc993537a8d05d40aff08434d3e22ce, type: 2}
+  - {fileID: 11400000, guid: 5e20bfd1ddada364bb42d70d7c9d9f40, type: 2}
+  - {fileID: 11400000, guid: 0dbe4202c6f79394e9539ea311f7b05f, type: 2}
+  - {fileID: 11400000, guid: a7646d83330b26a46bac60c02e3a2b67, type: 2}
+  - {fileID: 11400000, guid: 3b71048829a100e49b7d729909b4f634, type: 2}
+  - {fileID: 11400000, guid: be5a03d006168784a865a207175ca5bc, type: 2}
+  - {fileID: 11400000, guid: 9030171e8e653ab459e249edf025bc14, type: 2}
+  - {fileID: 11400000, guid: e20b6cf320a437f41aed75609255a0fe, type: 2}
+  - {fileID: 11400000, guid: 19716162bda114f41868e07e25ef5692, type: 2}
+  products:
+  - {fileID: 11400000, guid: 2e01c267ec9f172418c37466f3136ef6, type: 2}
+  - {fileID: 11400000, guid: fc27f53090c952f4881178182322df1d, type: 2}
+  - {fileID: 11400000, guid: ab97c64e8232e594db01d824f525cfc5, type: 2}
+  - {fileID: 11400000, guid: 592c95bd96a96564eaf29766ded26af9, type: 2}
+  - {fileID: 11400000, guid: ae270e165720a6a4d96d2b619bff89e4, type: 2}
+  - {fileID: 11400000, guid: 7d8a9fd6f9db2044885e9d04e766ed74, type: 2}
+  - {fileID: 11400000, guid: ad640700053f67642b2551df3aa66d5f, type: 2}
+  - {fileID: 11400000, guid: aff9bb20bef70ac41860f4dd4e5686fc, type: 2}
+  - {fileID: 11400000, guid: ef58dfcda903de84d96042d6a1a2fce5, type: 2}
+  - {fileID: 11400000, guid: c691fe96812b5ca46915222a9e0ffe87, type: 2}
+  - {fileID: 11400000, guid: bc86af917c430e74d9c339685a8d2079, type: 2}
+  - {fileID: 11400000, guid: 5ac3e0a434e381248871c461e3172820, type: 2}
+  animals:
+  - {fileID: 11400000, guid: f0204649c0ee560438a752bd1f84aa62, type: 2}
+  - {fileID: 11400000, guid: fbecd1f804ccdf94f8d187c2c4187405, type: 2}
+  - {fileID: 11400000, guid: 8deb453c1cb69384dad8088499e91594, type: 2}
+  workers:
+  - {fileID: 11400000, guid: f845af3e68ab4e449aefb54dc85a1354, type: 2}
+  - {fileID: 11400000, guid: b5fd36fde6df15945b8555df0ee55ef0, type: 2}
+  - {fileID: 11400000, guid: e100f1a23d8fec140b36b2b9e7115a99, type: 2}
+  - {fileID: 11400000, guid: c187ceb1f2a39fb478c04fc59b7d4c68, type: 2}
+  regions:
+  - {fileID: 11400000, guid: 2b46237a969b4fa4a9b8dd140577a3d7, type: 2}
+  - {fileID: 11400000, guid: 2a5eb10fbcc743d48a19b69a41ef15bc, type: 2}
+  - {fileID: 11400000, guid: c2bd488e3239f9147a1d0dfcec3c8405, type: 2}
+  - {fileID: 11400000, guid: 904c49599462dc44d929898cce05c09d, type: 2}
+  achievements:
+  - {fileID: 11400000, guid: a24cb191c068e874db86cfc2291b674d, type: 2}
+  - {fileID: 11400000, guid: 74b44d6be923b444796f31e2c4c37d49, type: 2}
+  - {fileID: 11400000, guid: 26092980130a4814385152422dce5a33, type: 2}
+  - {fileID: 11400000, guid: 5202063080d1a0f40bc2d367e29a4063, type: 2}
+  - {fileID: 11400000, guid: 4e8fa546b7d4b10438f1a9589bcd27f9, type: 2}
+  villagers:
+  - {fileID: 11400000, guid: abd5fd7fd28c5ee40884dce20f7a6714, type: 2}
+  - {fileID: 11400000, guid: 700a1e508847b0347a649799ad9d4e4b, type: 2}
+  - {fileID: 11400000, guid: f4587274c9fcddc4781765f1644a9818, type: 2}
+  offlineCapSeconds: 28800

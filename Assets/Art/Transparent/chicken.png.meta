@@ -1,0 +1,1161 @@
+fileFormatVersion: 2
+guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8678448789981272047
+    second: chicken_0
+  - first:
+      213: -8404994067569620469
+    second: animal_chicken_idle_down
+  - first:
+      213: -8257989909948982617
+    second: animal_chicken_walk_down_01
+  - first:
+      213: -800523340358663540
+    second: animal_chicken_walk_down_02
+  - first:
+      213: 5565693849524565407
+    second: animal_chicken_walk_down_03
+  - first:
+      213: 6793673613150578088
+    second: animal_chicken_walk_down_04
+  - first:
+      213: -5794501401227749511
+    second: animal_chicken_walk_down
+  - first:
+      213: 2571929460180209779
+    second: animal_chicken_sleep_down
+  - first:
+      213: 7144963849429083600
+    second: animal_chicken_eat_down
+  - first:
+      213: 3836672447864212006
+    second: animal_chicken_rest_down
+  - first:
+      213: -8822751358246441919
+    second: animal_chicken_funny_down
+  - first:
+      213: -1953423649358015591
+    second: animal_chicken_idle_up
+  - first:
+      213: 5042443303383997222
+    second: animal_chicken_walk_up_01
+  - first:
+      213: 8454883491048153837
+    second: animal_chicken_walk_up_02
+  - first:
+      213: -6748858851001918510
+    second: animal_chicken_walk_up_03
+  - first:
+      213: -435404397438246216
+    second: animal_chicken_walk_up_04
+  - first:
+      213: -647366321138763884
+    second: animal_chicken_walk_up
+  - first:
+      213: 6639264366242130805
+    second: animal_chicken_sleep_up
+  - first:
+      213: 8710137441176596100
+    second: animal_chicken_eat_up
+  - first:
+      213: 6272912966631765353
+    second: animal_chicken_rest_up
+  - first:
+      213: 3643019215876029891
+    second: animal_chicken_funny_up
+  - first:
+      213: -6528040248239291981
+    second: animal_chicken_idle_left
+  - first:
+      213: 2897770291743419784
+    second: animal_chicken_walk_left_01
+  - first:
+      213: -1352373875632971532
+    second: animal_chicken_walk_left_02
+  - first:
+      213: 7277378069774616411
+    second: animal_chicken_walk_left_03
+  - first:
+      213: -8043493324314553297
+    second: animal_chicken_walk_left_04
+  - first:
+      213: -7348506251697558293
+    second: animal_chicken_walk_left
+  - first:
+      213: 4586861836935519092
+    second: animal_chicken_sleep_left
+  - first:
+      213: -4924420922431842872
+    second: animal_chicken_eat_left
+  - first:
+      213: 4357818996794389035
+    second: animal_chicken_rest_left
+  - first:
+      213: -4393465683568562745
+    second: animal_chicken_funny_left
+  - first:
+      213: 6193486400175600274
+    second: animal_chicken_idle_right
+  - first:
+      213: -8176370841824680206
+    second: animal_chicken_walk_right_01
+  - first:
+      213: -6023260772708692404
+    second: animal_chicken_walk_right_02
+  - first:
+      213: -6425239918286635380
+    second: animal_chicken_walk_right_03
+  - first:
+      213: 5572173484631093526
+    second: animal_chicken_walk_right_04
+  - first:
+      213: 4404096533287364085
+    second: animal_chicken_walk_right
+  - first:
+      213: 2073063511930272897
+    second: animal_chicken_sleep_right
+  - first:
+      213: -1366023377727297494
+    second: animal_chicken_eat_right
+  - first:
+      213: 944589747780355900
+    second: animal_chicken_rest_right
+  - first:
+      213: -5557788045452407809
+    second: animal_chicken_funny_right
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: animal_chicken_idle_down
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1052
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a4f375d667b5b80800000000000000
+      internalID: -8404994067569620469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_down_01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 902
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aa1bbafde9b56d80800000000000000
+      internalID: -8257989909948982617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_down_02
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 902
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8243876348f3e4f0800000000000000
+      internalID: -800523340358663540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_down_03
+      rect:
+        serializedVersion: 2
+        x: 300.66666
+        y: 902
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95fc7d51115d3d40800000000000000
+      internalID: 5565693849524565407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_down_04
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 902
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5e8cf182af74e50800000000000000
+      internalID: 6793673613150578088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_down
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 902
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97711591dabc59fa0800000000000000
+      internalID: -5794501401227749511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_sleep_down
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3705765a73451b320800000000000000
+      internalID: 2571929460180209779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_eat_down
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d56a32f3c2082360800000000000000
+      internalID: 7144963849429083600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_rest_down
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62a897683499e3530800000000000000
+      internalID: 3836672447864212006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_funny_down
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 152
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14c2026726a4f8580800000000000000
+      internalID: -8822751358246441919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_idle_up
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9931b246a8b04e4e0800000000000000
+      internalID: -1953423649358015591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_up_01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62b104ae77b5af540800000000000000
+      internalID: 5042443303383997222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_up_02
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de26d3d3db7c55570800000000000000
+      internalID: 8454883491048153837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_up_03
+      rect:
+        serializedVersion: 2
+        x: 300.66666
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2db97cac1ac3752a0800000000000000
+      internalID: -6748858851001918510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_up_04
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b2ec05e10225f9f0800000000000000
+      internalID: -435404397438246216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_up
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497f8f4c2c71407f0800000000000000
+      internalID: -647366321138763884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_sleep_up
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b65c7c3c7632c50800000000000000
+      internalID: 6639264366242130805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_eat_up
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e292ebadf90e870800000000000000
+      internalID: 8710137441176596100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_rest_up
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 965370b9b1ddd0750800000000000000
+      internalID: 6272912966631765353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_funny_up
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 152
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd7630ecaa9e8230800000000000000
+      internalID: 3643019215876029891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_idle_left
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b18e343bfdb765a0800000000000000
+      internalID: -6528040248239291981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_left_01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88deb003ab2f63820800000000000000
+      internalID: 2897770291743419784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_left_02
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0e06310276b3de0800000000000000
+      internalID: -1352373875632971532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_left_03
+      rect:
+        serializedVersion: 2
+        x: 300.66666
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5742291cc07ef460800000000000000
+      internalID: 7277378069774616411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_left_04
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2451031075cf5090800000000000000
+      internalID: -8043493324314553297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_left
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec64d58f7cd40a90800000000000000
+      internalID: -7348506251697558293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_sleep_left
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b5658d98ec7af30800000000000000
+      internalID: 4586861836935519092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_eat_left
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5d2f10341f8abb0800000000000000
+      internalID: -4924420922431842872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_rest_left
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b22f063f9451a7c30800000000000000
+      internalID: 4357818996794389035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_funny_left
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 152
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cde6060d364703c0800000000000000
+      internalID: -4393465683568562745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_idle_right
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292fda3011fa3f550800000000000000
+      internalID: 6193486400175600274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_right_01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f6ad252a02b78e80800000000000000
+      internalID: -8176370841824680206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_right_02
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e47256d34196ca0800000000000000
+      internalID: -6023260772708692404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_right_03
+      rect:
+        serializedVersion: 2
+        x: 300.66666
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e7dd13656f4d6a0800000000000000
+      internalID: -6425239918286635380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_right_04
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 611794af246545d40800000000000000
+      internalID: 5572173484631093526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_walk_right
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f56f1f867e7e1d30800000000000000
+      internalID: 4404096533287364085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_sleep_right
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c7d61d74005cc10800000000000000
+      internalID: 2073063511930272897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_eat_right
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a286fa7b9f8ea0de0800000000000000
+      internalID: -1366023377727297494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_rest_right
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c378ce6fe5bdb1d00800000000000000
+      internalID: 944589747780355900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_chicken_funny_right
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 152
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb85e51835ced2b0800000000000000
+      internalID: -5557788045452407809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      animal_chicken_eat_down: 7144963849429083600
+      animal_chicken_eat_left: -4924420922431842872
+      animal_chicken_eat_right: -1366023377727297494
+      animal_chicken_eat_up: 8710137441176596100
+      animal_chicken_funny_down: -8822751358246441919
+      animal_chicken_funny_left: -4393465683568562745
+      animal_chicken_funny_right: -5557788045452407809
+      animal_chicken_funny_up: 3643019215876029891
+      animal_chicken_idle_down: -8404994067569620469
+      animal_chicken_idle_left: -6528040248239291981
+      animal_chicken_idle_right: 6193486400175600274
+      animal_chicken_idle_up: -1953423649358015591
+      animal_chicken_rest_down: 3836672447864212006
+      animal_chicken_rest_left: 4357818996794389035
+      animal_chicken_rest_right: 944589747780355900
+      animal_chicken_rest_up: 6272912966631765353
+      animal_chicken_sleep_down: 2571929460180209779
+      animal_chicken_sleep_left: 4586861836935519092
+      animal_chicken_sleep_right: 2073063511930272897
+      animal_chicken_sleep_up: 6639264366242130805
+      animal_chicken_walk_down: -5794501401227749511
+      animal_chicken_walk_down_01: -8257989909948982617
+      animal_chicken_walk_down_02: -800523340358663540
+      animal_chicken_walk_down_03: 5565693849524565407
+      animal_chicken_walk_down_04: 6793673613150578088
+      animal_chicken_walk_left: -7348506251697558293
+      animal_chicken_walk_left_01: 2897770291743419784
+      animal_chicken_walk_left_02: -1352373875632971532
+      animal_chicken_walk_left_03: 7277378069774616411
+      animal_chicken_walk_left_04: -8043493324314553297
+      animal_chicken_walk_right: 4404096533287364085
+      animal_chicken_walk_right_01: -8176370841824680206
+      animal_chicken_walk_right_02: -6023260772708692404
+      animal_chicken_walk_right_03: -6425239918286635380
+      animal_chicken_walk_right_04: 5572173484631093526
+      animal_chicken_walk_up: -647366321138763884
+      animal_chicken_walk_up_01: 5042443303383997222
+      animal_chicken_walk_up_02: 8454883491048153837
+      animal_chicken_walk_up_03: -6748858851001918510
+      animal_chicken_walk_up_04: -435404397438246216
+      chicken_0: 8678448789981272047
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

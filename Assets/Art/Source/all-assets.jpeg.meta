@@ -1,0 +1,953 @@
+fileFormatVersion: 2
+guid: 00b66d6fa19331247873abb8bee4b6bb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2899321143219045630
+    second: all-assets_0
+  - first:
+      213: 6973341628372400424
+    second: logo
+  - first:
+      213: 5153018138075214935
+    second: icon_plant
+  - first:
+      213: 3416104080082018083
+    second: icon_water
+  - first:
+      213: 5351786471198919569
+    second: icon_harvest
+  - first:
+      213: -7061683953528280495
+    second: icon_sell
+  - first:
+      213: -658742112255296425
+    second: icon_build
+  - first:
+      213: -5521198437129584981
+    second: icon_remove
+  - first:
+      213: -5356211433497995897
+    second: icon_upgrade
+  - first:
+      213: 990114396112045252
+    second: icon_inventory
+  - first:
+      213: 5364222945162982727
+    second: icon_wheat
+  - first:
+      213: -8931956574364583230
+    second: icon_carrot
+  - first:
+      213: -4165668218423927518
+    second: icon_apple
+  - first:
+      213: 9044399292513077733
+    second: icon_lettuce
+  - first:
+      213: 3553939410108082883
+    second: icon_chicken
+  - first:
+      213: 7806701457784682105
+    second: icon_cow
+  - first:
+      213: -6093278733300331257
+    second: icon_rabbit
+  - first:
+      213: -1927975520965488876
+    second: icon_egg
+  - first:
+      213: -934403849501251223
+    second: icon_milk
+  - first:
+      213: -8517026341312844961
+    second: icon_wool
+  - first:
+      213: 2419401439483174887
+    second: icon_flour
+  - first:
+      213: -3052873774105304232
+    second: icon_bread
+  - first:
+      213: -3373729320080956571
+    second: icon_cheese
+  - first:
+      213: -6432489059280883572
+    second: icon_jam
+  - first:
+      213: -2668368429839821216
+    second: icon_coin
+  - first:
+      213: 1293072516252954205
+    second: icon_gem
+  - first:
+      213: -8685332795733812696
+    second: icon_home
+  - first:
+      213: -2459231281210174493
+    second: icon_shop
+  - first:
+      213: -4213078718187347345
+    second: icon_settings
+  - first:
+      213: 5352688606708250072
+    second: icon_profile
+  - first:
+      213: 2159669579848111919
+    second: btn_primary_normal
+  - first:
+      213: 1375450590561146369
+    second: btn_primary_pressed
+  - first:
+      213: -7614662209602743585
+    second: icon_lock
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: logo
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 579
+        width: 294
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 829b490c34946c060800000000000000
+      internalID: 6973341628372400424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_plant
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 649
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7543e19d1b2338740800000000000000
+      internalID: 5153018138075214935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_water
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 649
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32f1d01cf80786f20800000000000000
+      internalID: 3416104080082018083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_harvest
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 649
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19b8d89c07d554a40800000000000000
+      internalID: 5351786471198919569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_sell
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 649
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15aeed1dbdbdffd90800000000000000
+      internalID: -7061683953528280495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_build
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 585
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75cbe600a8dabd6f0800000000000000
+      internalID: -658742112255296425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_remove
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 585
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baef2742643c063b0800000000000000
+      internalID: -5521198437129584981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_upgrade
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 585
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7855774641aeaa5b0800000000000000
+      internalID: -5356211433497995897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_inventory
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 585
+        width: 46
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c442432cc79dbd00800000000000000
+      internalID: 990114396112045252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_wheat
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 650
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7457076095c817a40800000000000000
+      internalID: 5364222945162982727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_carrot
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 650
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cab8c3b1d05b0480800000000000000
+      internalID: -8931956574364583230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_apple
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 650
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d15b473d29036c0800000000000000
+      internalID: -4165668218423927518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_lettuce
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 650
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e9490dbc39248d70800000000000000
+      internalID: 9044399292513077733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_chicken
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 650
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cae0cc5011225130800000000000000
+      internalID: 3553939410108082883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_cow
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 586
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 976b7ca3d99f65c60800000000000000
+      internalID: 7806701457784682105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_rabbit
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 586
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70d01309643507ba0800000000000000
+      internalID: -6093278733300331257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_egg
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 586
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f04318a747e35e0800000000000000
+      internalID: -1927975520965488876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_milk
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 586
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96968b946a45803f0800000000000000
+      internalID: -934403849501251223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_wool
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 586
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b276feaa17dc980800000000000000
+      internalID: -8517026341312844961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_flour
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 481
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ef96796ac0739120800000000000000
+      internalID: 2419401439483174887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_bread
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 481
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853e85e2a7302a5d0800000000000000
+      internalID: -3052873774105304232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_cheese
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 481
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5632144ee0b1e21d0800000000000000
+      internalID: -3373729320080956571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_jam
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 481
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c80f9f708453bb6a0800000000000000
+      internalID: -6432489059280883572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_coin
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 648
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 066d789fc0d08fad0800000000000000
+      internalID: -2668368429839821216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_gem
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 648
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5ee3104a9ae1f110800000000000000
+      internalID: 1293072516252954205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_home
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 483
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a5c32d6df777780800000000000000
+      internalID: -8685332795733812696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_shop
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 483
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e350f6ed2e0fddd0800000000000000
+      internalID: -2459231281210174493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_settings
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 483
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f626fa74a332885c0800000000000000
+      internalID: -4213078718187347345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_profile
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 483
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d530249de1984a40800000000000000
+      internalID: 5352688606708250072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_primary_normal
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 193
+        width: 87
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27501b5a00b8fd10800000000000000
+      internalID: 2159669579848111919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: btn_primary_pressed
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 193
+        width: 87
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1069f705605961310800000000000000
+      internalID: 1375450590561146369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icon_lock
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 26
+        width: 58
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd299088019435690800000000000000
+      internalID: -7614662209602743585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      all-assets_0: -2899321143219045630
+      btn_primary_normal: 2159669579848111919
+      btn_primary_pressed: 1375450590561146369
+      icon_apple: -4165668218423927518
+      icon_bread: -3052873774105304232
+      icon_build: -658742112255296425
+      icon_carrot: -8931956574364583230
+      icon_cheese: -3373729320080956571
+      icon_chicken: 3553939410108082883
+      icon_coin: -2668368429839821216
+      icon_cow: 7806701457784682105
+      icon_egg: -1927975520965488876
+      icon_flour: 2419401439483174887
+      icon_gem: 1293072516252954205
+      icon_harvest: 5351786471198919569
+      icon_home: -8685332795733812696
+      icon_inventory: 990114396112045252
+      icon_jam: -6432489059280883572
+      icon_lettuce: 9044399292513077733
+      icon_lock: -7614662209602743585
+      icon_milk: -934403849501251223
+      icon_plant: 5153018138075214935
+      icon_profile: 5352688606708250072
+      icon_rabbit: -6093278733300331257
+      icon_remove: -5521198437129584981
+      icon_sell: -7061683953528280495
+      icon_settings: -4213078718187347345
+      icon_shop: -2459231281210174493
+      icon_upgrade: -5356211433497995897
+      icon_water: 3416104080082018083
+      icon_wheat: 5364222945162982727
+      icon_wool: -8517026341312844961
+      logo: 6973341628372400424
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

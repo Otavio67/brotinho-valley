@@ -1,0 +1,1161 @@
+fileFormatVersion: 2
+guid: d0f28d393b96c634bb5c5e43d84c6862
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5792511334730316588
+    second: pig_0
+  - first:
+      213: -7996952591234572911
+    second: animal_pig_idle_down
+  - first:
+      213: 6497051551238744505
+    second: animal_pig_walk_down_01
+  - first:
+      213: 4797789609686452591
+    second: animal_pig_walk_down_02
+  - first:
+      213: -4900344833891460719
+    second: animal_pig_walk_down_03
+  - first:
+      213: -1499911055355885302
+    second: animal_pig_walk_down_04
+  - first:
+      213: -5173162113592169270
+    second: animal_pig_walk_down
+  - first:
+      213: -5837521588654787197
+    second: animal_pig_sleep_down
+  - first:
+      213: -386924010928819481
+    second: animal_pig_eat_down
+  - first:
+      213: -3112933891460863440
+    second: animal_pig_rest_down
+  - first:
+      213: 5909004258687501060
+    second: animal_pig_funny_down
+  - first:
+      213: 9104612255158225613
+    second: animal_pig_idle_up
+  - first:
+      213: 1182157235887939022
+    second: animal_pig_walk_up_01
+  - first:
+      213: 3173364695287043289
+    second: animal_pig_walk_up_02
+  - first:
+      213: 2275229855139330873
+    second: animal_pig_walk_up_03
+  - first:
+      213: 4913057160102985484
+    second: animal_pig_walk_up_04
+  - first:
+      213: -7495122237789123022
+    second: animal_pig_walk_up
+  - first:
+      213: -302441395114382155
+    second: animal_pig_sleep_up
+  - first:
+      213: -3594561365869505352
+    second: animal_pig_eat_up
+  - first:
+      213: -3076662771819080027
+    second: animal_pig_rest_up
+  - first:
+      213: -2751399510973505965
+    second: animal_pig_funny_up
+  - first:
+      213: -7543137252053995236
+    second: animal_pig_idle_left
+  - first:
+      213: -6361084849514804436
+    second: animal_pig_walk_left_01
+  - first:
+      213: 6676228047665150700
+    second: animal_pig_walk_left_02
+  - first:
+      213: -6142329333756981127
+    second: animal_pig_walk_left_03
+  - first:
+      213: -6735856018124795178
+    second: animal_pig_walk_left_04
+  - first:
+      213: 7606501499185703057
+    second: animal_pig_walk_left
+  - first:
+      213: -957979111796432448
+    second: animal_pig_sleep_left
+  - first:
+      213: 470902910429845666
+    second: animal_pig_eat_left
+  - first:
+      213: 3623598307816021429
+    second: animal_pig_rest_left
+  - first:
+      213: -3177973980305044507
+    second: animal_pig_funny_left
+  - first:
+      213: -2120104948145834764
+    second: animal_pig_idle_right
+  - first:
+      213: 9050081185570373883
+    second: animal_pig_walk_right_01
+  - first:
+      213: 1883877609050467477
+    second: animal_pig_walk_right_02
+  - first:
+      213: -852427013647679796
+    second: animal_pig_walk_right_03
+  - first:
+      213: -6235919062899861943
+    second: animal_pig_walk_right_04
+  - first:
+      213: 3993940332278240706
+    second: animal_pig_walk_right
+  - first:
+      213: -695752780971542582
+    second: animal_pig_sleep_right
+  - first:
+      213: 1678322266764915377
+    second: animal_pig_eat_right
+  - first:
+      213: -8604558567616872543
+    second: animal_pig_rest_right
+  - first:
+      213: -2999576872400349215
+    second: animal_pig_funny_right
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: animal_pig_idle_down
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1052
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19dd2d9ecfd150190800000000000000
+      internalID: -7996952591234572911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_down_01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 902
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b96cf686f92a2a50800000000000000
+      internalID: 6497051551238744505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_down_02
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 902
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f69cb60fa3c259240800000000000000
+      internalID: 4797789609686452591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_down_03
+      rect:
+        serializedVersion: 2
+        x: 300.66666
+        y: 902
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1999af2365a7efbb0800000000000000
+      internalID: -4900344833891460719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_down_04
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 902
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a09c4de87de3f2be0800000000000000
+      internalID: -1499911055355885302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_down
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 902
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc64dd577c3538b0800000000000000
+      internalID: -5173162113592169270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_sleep_down
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 385be8b2b05fcfea0800000000000000
+      internalID: -5837521588654787197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_eat_down
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e2b48d79ae51aaf0800000000000000
+      internalID: -386924010928819481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_rest_down
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03a63366e13acc4d0800000000000000
+      internalID: -3112933891460863440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_funny_down
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 152
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403c657e010010250800000000000000
+      internalID: 5909004258687501060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_idle_up
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcacf569b941a5e70800000000000000
+      internalID: 9104612255158225613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_up_01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecd12c12ebdd76010800000000000000
+      internalID: 1182157235887939022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_up_02
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d4995d806e0a0c20800000000000000
+      internalID: 3173364695287043289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_up_03
+      rect:
+        serializedVersion: 2
+        x: 300.66666
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b71f1af7d339f10800000000000000
+      internalID: 2275229855139330873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_up_04
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0fb025e47fae2440800000000000000
+      internalID: 4913057160102985484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_up
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23ec27c190afbf790800000000000000
+      internalID: -7495122237789123022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_sleep_up
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bc65de47238dcbf0800000000000000
+      internalID: -302441395114382155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_eat_up
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b451088b7d8d1ec0800000000000000
+      internalID: -3594561365869505352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_rest_up
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a61e08828f7d45d0800000000000000
+      internalID: -3076662771819080027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_funny_up
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 152
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e9d39e8b011d9d0800000000000000
+      internalID: -2751399510973505965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_idle_left
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c113e4f62a4615790800000000000000
+      internalID: -7543137252053995236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_left_01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b0d862803e8b7a0800000000000000
+      internalID: -6361084849514804436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_left_02
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceab494890ab6ac50800000000000000
+      internalID: 6676228047665150700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_left_03
+      rect:
+        serializedVersion: 2
+        x: 300.66666
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97014ffa30012caa0800000000000000
+      internalID: -6142329333756981127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_left_04
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d29e7db3ae6582a0800000000000000
+      internalID: -6735856018124795178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_left
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198a07200d8bf8960800000000000000
+      internalID: 7606501499185703057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_sleep_left
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c1212bc21394b2f0800000000000000
+      internalID: -957979111796432448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_eat_left
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a85edbb3bbf88600800000000000000
+      internalID: 470902910429845666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_rest_left
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd941a567b994230800000000000000
+      internalID: 3623598307816021429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_funny_left
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 152
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ebcb76a08195e3d0800000000000000
+      internalID: -3177973980305044507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_idle_right
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f4383f48cfd392e0800000000000000
+      internalID: -2120104948145834764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_right_01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf04e5e83e8589d70800000000000000
+      internalID: 9050081185570373883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_right_02
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ce3c744b0e42a10800000000000000
+      internalID: 1883877609050467477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_right_03
+      rect:
+        serializedVersion: 2
+        x: 300.66666
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce359eb5229b24f0800000000000000
+      internalID: -852427013647679796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_right_04
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94654cfc6a09579a0800000000000000
+      internalID: -6235919062899861943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_walk_right
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c5dc8742935d6730800000000000000
+      internalID: 3993940332278240706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_sleep_right
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac773be28803856f0800000000000000
+      internalID: -695752780971542582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_eat_right
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b2b621a5399a4710800000000000000
+      internalID: 1678322266764915377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_rest_right
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aff6285297769880800000000000000
+      internalID: -8604558567616872543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_pig_funny_right
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 152
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7991c1abc5f56d0800000000000000
+      internalID: -2999576872400349215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      animal_pig_eat_down: -386924010928819481
+      animal_pig_eat_left: 470902910429845666
+      animal_pig_eat_right: 1678322266764915377
+      animal_pig_eat_up: -3594561365869505352
+      animal_pig_funny_down: 5909004258687501060
+      animal_pig_funny_left: -3177973980305044507
+      animal_pig_funny_right: -2999576872400349215
+      animal_pig_funny_up: -2751399510973505965
+      animal_pig_idle_down: -7996952591234572911
+      animal_pig_idle_left: -7543137252053995236
+      animal_pig_idle_right: -2120104948145834764
+      animal_pig_idle_up: 9104612255158225613
+      animal_pig_rest_down: -3112933891460863440
+      animal_pig_rest_left: 3623598307816021429
+      animal_pig_rest_right: -8604558567616872543
+      animal_pig_rest_up: -3076662771819080027
+      animal_pig_sleep_down: -5837521588654787197
+      animal_pig_sleep_left: -957979111796432448
+      animal_pig_sleep_right: -695752780971542582
+      animal_pig_sleep_up: -302441395114382155
+      animal_pig_walk_down: -5173162113592169270
+      animal_pig_walk_down_01: 6497051551238744505
+      animal_pig_walk_down_02: 4797789609686452591
+      animal_pig_walk_down_03: -4900344833891460719
+      animal_pig_walk_down_04: -1499911055355885302
+      animal_pig_walk_left: 7606501499185703057
+      animal_pig_walk_left_01: -6361084849514804436
+      animal_pig_walk_left_02: 6676228047665150700
+      animal_pig_walk_left_03: -6142329333756981127
+      animal_pig_walk_left_04: -6735856018124795178
+      animal_pig_walk_right: 3993940332278240706
+      animal_pig_walk_right_01: 9050081185570373883
+      animal_pig_walk_right_02: 1883877609050467477
+      animal_pig_walk_right_03: -852427013647679796
+      animal_pig_walk_right_04: -6235919062899861943
+      animal_pig_walk_up: -7495122237789123022
+      animal_pig_walk_up_01: 1182157235887939022
+      animal_pig_walk_up_02: 3173364695287043289
+      animal_pig_walk_up_03: 2275229855139330873
+      animal_pig_walk_up_04: 4913057160102985484
+      pig_0: -5792511334730316588
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

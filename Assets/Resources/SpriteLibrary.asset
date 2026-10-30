@@ -1,0 +1,654 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a20eab29dec24a846a299203a2e6122d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Brotinho.Runtime::Brotinho.SpriteLibrary
+  fallback: {fileID: 5566744112423828952, guid: 5f995372e0dc8c843aca8639012ee144, type: 3}
+  entries:
+  - name: bg_sky_dusk
+    sprite: {fileID: 1388049003773939220, guid: b03c5eb103b645b46b9e670b444c7eae, type: 3}
+  - name: afternoon-sky
+    sprite: {fileID: 1388049003773939220, guid: b03c5eb103b645b46b9e670b444c7eae, type: 3}
+  - name: icon_apple
+    sprite: {fileID: -4165668218423927518, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_bread
+    sprite: {fileID: -3052873774105304232, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_build
+    sprite: {fileID: -658742112255296425, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_carrot
+    sprite: {fileID: -8931956574364583230, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_cheese
+    sprite: {fileID: -3373729320080956571, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_chicken
+    sprite: {fileID: 3553939410108082883, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_coin
+    sprite: {fileID: -2668368429839821216, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_cow
+    sprite: {fileID: 7806701457784682105, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_egg
+    sprite: {fileID: -1927975520965488876, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_flour
+    sprite: {fileID: 2419401439483174887, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_gem
+    sprite: {fileID: 1293072516252954205, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_harvest
+    sprite: {fileID: 5351786471198919569, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_home
+    sprite: {fileID: -8685332795733812696, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_inventory
+    sprite: {fileID: 990114396112045252, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_jam
+    sprite: {fileID: -6432489059280883572, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_lettuce
+    sprite: {fileID: 9044399292513077733, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_lock
+    sprite: {fileID: -7614662209602743585, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_milk
+    sprite: {fileID: -934403849501251223, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_plant
+    sprite: {fileID: 5153018138075214935, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_profile
+    sprite: {fileID: 5352688606708250072, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_rabbit
+    sprite: {fileID: -6093278733300331257, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_remove
+    sprite: {fileID: -5521198437129584981, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_sell
+    sprite: {fileID: -7061683953528280495, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_settings
+    sprite: {fileID: -4213078718187347345, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_shop
+    sprite: {fileID: -2459231281210174493, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_upgrade
+    sprite: {fileID: -5356211433497995897, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_water
+    sprite: {fileID: 3416104080082018083, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_wheat
+    sprite: {fileID: 5364222945162982727, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: icon_wool
+    sprite: {fileID: -8517026341312844961, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: btn_primary_normal
+    sprite: {fileID: 2159669579848111919, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: btn_primary_pressed
+    sprite: {fileID: 1375450590561146369, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: logo
+    sprite: {fileID: 6973341628372400424, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: all-assets
+    sprite: {fileID: -4165668218423927518, guid: 00b66d6fa19331247873abb8bee4b6bb, type: 3}
+  - name: crop_apple_growing_01
+    sprite: {fileID: 652431313115616258, guid: 5367c4fbe4e323a41a45dfc3a7347f39, type: 3}
+  - name: crop_apple_grown_01
+    sprite: {fileID: 2085572230180277686, guid: 5367c4fbe4e323a41a45dfc3a7347f39, type: 3}
+  - name: crop_apple_planted_01
+    sprite: {fileID: -7495150947010698544, guid: 5367c4fbe4e323a41a45dfc3a7347f39, type: 3}
+  - name: crop_apple_ready_01
+    sprite: {fileID: 9086366439345392706, guid: 5367c4fbe4e323a41a45dfc3a7347f39, type: 3}
+  - name: crop_apple_sprout_01
+    sprite: {fileID: -315242067293113422, guid: 5367c4fbe4e323a41a45dfc3a7347f39, type: 3}
+  - name: apple_tree
+    sprite: {fileID: 652431313115616258, guid: 5367c4fbe4e323a41a45dfc3a7347f39, type: 3}
+  - name: building_barn_day
+    sprite: {fileID: 8160247240777719640, guid: f953981e62f931e4ab71ece90da865f6, type: 3}
+  - name: building_barn_night
+    sprite: {fileID: 8248375642335355145, guid: f953981e62f931e4ab71ece90da865f6, type: 3}
+  - name: barn
+    sprite: {fileID: 8160247240777719640, guid: f953981e62f931e4ab71ece90da865f6, type: 3}
+  - name: bg_sky_day
+    sprite: {fileID: 8366489679632543336, guid: f69544380efdcab4d919afa6a95c1c3c, type: 3}
+  - name: bright-sky
+    sprite: {fileID: 8366489679632543336, guid: f69544380efdcab4d919afa6a95c1c3c, type: 3}
+  - name: crop_carrot_growing_01
+    sprite: {fileID: 4864908029782717452, guid: 9a99671c1aa3a9e44bb83d6a1d0b1392, type: 3}
+  - name: crop_carrot_grown_01
+    sprite: {fileID: 4711835045241432507, guid: 9a99671c1aa3a9e44bb83d6a1d0b1392, type: 3}
+  - name: crop_carrot_planted_01
+    sprite: {fileID: 423174347648561207, guid: 9a99671c1aa3a9e44bb83d6a1d0b1392, type: 3}
+  - name: crop_carrot_ready_01
+    sprite: {fileID: 993660966836276548, guid: 9a99671c1aa3a9e44bb83d6a1d0b1392, type: 3}
+  - name: crop_carrot_sprout_01
+    sprite: {fileID: 515560139105380389, guid: 9a99671c1aa3a9e44bb83d6a1d0b1392, type: 3}
+  - name: carrot
+    sprite: {fileID: 4864908029782717452, guid: 9a99671c1aa3a9e44bb83d6a1d0b1392, type: 3}
+  - name: building_chicken_coop_day
+    sprite: {fileID: 2917814322768974637, guid: cf30b348b93511343b01768e5c1ef8e5, type: 3}
+  - name: building_chicken_coop_night
+    sprite: {fileID: 6475454794934106471, guid: cf30b348b93511343b01768e5c1ef8e5, type: 3}
+  - name: chicken-coop
+    sprite: {fileID: 2917814322768974637, guid: cf30b348b93511343b01768e5c1ef8e5, type: 3}
+  - name: animal_chicken_eat_down
+    sprite: {fileID: 7144963849429083600, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_eat_left
+    sprite: {fileID: -4924420922431842872, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_eat_right
+    sprite: {fileID: -1366023377727297494, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_eat_up
+    sprite: {fileID: 8710137441176596100, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_funny_down
+    sprite: {fileID: -8822751358246441919, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_funny_left
+    sprite: {fileID: -4393465683568562745, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_funny_right
+    sprite: {fileID: -5557788045452407809, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_funny_up
+    sprite: {fileID: 3643019215876029891, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_idle_down
+    sprite: {fileID: -8404994067569620469, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_idle_left
+    sprite: {fileID: -6528040248239291981, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_idle_right
+    sprite: {fileID: 6193486400175600274, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_idle_up
+    sprite: {fileID: -1953423649358015591, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_rest_down
+    sprite: {fileID: 3836672447864212006, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_rest_left
+    sprite: {fileID: 4357818996794389035, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_rest_right
+    sprite: {fileID: 944589747780355900, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_rest_up
+    sprite: {fileID: 6272912966631765353, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_sleep_down
+    sprite: {fileID: 2571929460180209779, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_sleep_left
+    sprite: {fileID: 4586861836935519092, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_sleep_right
+    sprite: {fileID: 2073063511930272897, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_sleep_up
+    sprite: {fileID: 6639264366242130805, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_down
+    sprite: {fileID: -5794501401227749511, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_down_01
+    sprite: {fileID: -8257989909948982617, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_down_02
+    sprite: {fileID: -800523340358663540, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_down_03
+    sprite: {fileID: 5565693849524565407, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_down_04
+    sprite: {fileID: 6793673613150578088, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_left
+    sprite: {fileID: -7348506251697558293, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_left_01
+    sprite: {fileID: 2897770291743419784, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_left_02
+    sprite: {fileID: -1352373875632971532, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_left_03
+    sprite: {fileID: 7277378069774616411, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_left_04
+    sprite: {fileID: -8043493324314553297, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_right
+    sprite: {fileID: 4404096533287364085, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_right_01
+    sprite: {fileID: -8176370841824680206, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_right_02
+    sprite: {fileID: -6023260772708692404, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_right_03
+    sprite: {fileID: -6425239918286635380, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_right_04
+    sprite: {fileID: 5572173484631093526, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_up
+    sprite: {fileID: -647366321138763884, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_up_01
+    sprite: {fileID: 5042443303383997222, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_up_02
+    sprite: {fileID: 8454883491048153837, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_up_03
+    sprite: {fileID: -6748858851001918510, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_chicken_walk_up_04
+    sprite: {fileID: -435404397438246216, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: chicken
+    sprite: {fileID: 7144963849429083600, guid: 2273a4d9b738fcf4aa5ebda1edbd0f1f, type: 3}
+  - name: animal_cow_eat_down
+    sprite: {fileID: -1509971925950808151, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_eat_left
+    sprite: {fileID: 1580951728893339093, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_eat_right
+    sprite: {fileID: -6677682387444504330, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_eat_up
+    sprite: {fileID: 3879598382616031544, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_funny_down
+    sprite: {fileID: -4658865015310858778, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_funny_left
+    sprite: {fileID: 1759718194034611873, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_funny_right
+    sprite: {fileID: 8736692028798214848, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_funny_up
+    sprite: {fileID: 408881034367410154, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_idle_down
+    sprite: {fileID: 8237235514281384070, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_idle_left
+    sprite: {fileID: -4555640113813186733, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_idle_right
+    sprite: {fileID: 5317807051774226471, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_idle_up
+    sprite: {fileID: 5579356520112479994, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_rest_down
+    sprite: {fileID: 4395709693905800767, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_rest_left
+    sprite: {fileID: 7920463521848842279, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_rest_right
+    sprite: {fileID: -2815972736059661127, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_rest_up
+    sprite: {fileID: 3329663587955401283, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_sleep_down
+    sprite: {fileID: -5000573737904939889, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_sleep_left
+    sprite: {fileID: 827627970225060258, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_sleep_right
+    sprite: {fileID: 7913658778050254898, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_sleep_up
+    sprite: {fileID: -8144829110970161248, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_down
+    sprite: {fileID: 4407802729777048322, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_down_01
+    sprite: {fileID: 4744941855873889781, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_down_02
+    sprite: {fileID: 5915513780584202522, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_down_03
+    sprite: {fileID: -7319756992702558224, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_down_04
+    sprite: {fileID: 6469252689347399209, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_left
+    sprite: {fileID: -5638029143909821889, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_left_01
+    sprite: {fileID: 7661923300555923649, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_left_02
+    sprite: {fileID: 939353995931251535, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_left_03
+    sprite: {fileID: -5773263623913391596, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_left_04
+    sprite: {fileID: -6478430037324040324, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_right
+    sprite: {fileID: -8925674875899668746, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_right_01
+    sprite: {fileID: -6473431430018141801, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_right_02
+    sprite: {fileID: 7414639298945888668, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_right_03
+    sprite: {fileID: -408354803986598147, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_right_04
+    sprite: {fileID: -7617635861745863896, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_up
+    sprite: {fileID: -8535492147011925151, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_up_01
+    sprite: {fileID: 1639905106551052602, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_up_02
+    sprite: {fileID: -6558744089777321181, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_up_03
+    sprite: {fileID: -860170136177176682, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: animal_cow_walk_up_04
+    sprite: {fileID: -6031800626985632670, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: cow
+    sprite: {fileID: -1509971925950808151, guid: 97dbcf6edd917bf4aa92f688af5b1fed, type: 3}
+  - name: differents-backgrounds
+    sprite: {fileID: -90307719780283042, guid: 5ed45fce0a47b5d4faefd7600bc12555, type: 3}
+  - name: differents-backgrounds
+    sprite: {fileID: -90307719780283042, guid: 5ed45fce0a47b5d4faefd7600bc12555, type: 3}
+  - name: building_farmhouse_day
+    sprite: {fileID: 7818518960010836113, guid: ce0ab0e9a0bc14b408ef2dae4fa4121d, type: 3}
+  - name: building_farmhouse_night
+    sprite: {fileID: -6374063473458127400, guid: ce0ab0e9a0bc14b408ef2dae4fa4121d, type: 3}
+  - name: farmhouse
+    sprite: {fileID: 7818518960010836113, guid: ce0ab0e9a0bc14b408ef2dae4fa4121d, type: 3}
+  - name: crop_lettuce_growing_01
+    sprite: {fileID: -3078088556913204473, guid: 79eb52f5c5836f44d973494e1090267f, type: 3}
+  - name: crop_lettuce_grown_01
+    sprite: {fileID: -70961839413660656, guid: 79eb52f5c5836f44d973494e1090267f, type: 3}
+  - name: crop_lettuce_planted_01
+    sprite: {fileID: 860954691527930557, guid: 79eb52f5c5836f44d973494e1090267f, type: 3}
+  - name: crop_lettuce_ready_01
+    sprite: {fileID: -3322478613260370114, guid: 79eb52f5c5836f44d973494e1090267f, type: 3}
+  - name: crop_lettuce_sprout_01
+    sprite: {fileID: -8721650765429045361, guid: 79eb52f5c5836f44d973494e1090267f, type: 3}
+  - name: lettuce
+    sprite: {fileID: -3078088556913204473, guid: 79eb52f5c5836f44d973494e1090267f, type: 3}
+  - name: player_eat_down
+    sprite: {fileID: 7632060086583786845, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_eat_left
+    sprite: {fileID: -1343647223852894443, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_eat_right
+    sprite: {fileID: 214514892282630732, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_eat_up
+    sprite: {fileID: 3346338701029593469, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_funny_down
+    sprite: {fileID: -1120134108123691874, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_funny_left
+    sprite: {fileID: -5053082133834865923, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_funny_right
+    sprite: {fileID: -6950487579609364169, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_funny_up
+    sprite: {fileID: -7480201079709138838, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_idle_down
+    sprite: {fileID: -7473137892726700792, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_idle_left
+    sprite: {fileID: -8898647619024668539, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_idle_right
+    sprite: {fileID: -8745884617702900172, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_idle_up
+    sprite: {fileID: -3832329137943225316, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_rest_down
+    sprite: {fileID: 345463251828846629, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_rest_left
+    sprite: {fileID: 803185610933391877, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_rest_right
+    sprite: {fileID: 4459189836099186408, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_rest_up
+    sprite: {fileID: -3489224470487544881, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_sleep_down
+    sprite: {fileID: -338990927779704745, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_sleep_left
+    sprite: {fileID: -5310219729587592809, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_sleep_right
+    sprite: {fileID: 6000059218610829510, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_sleep_up
+    sprite: {fileID: -8609121070300729780, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_down
+    sprite: {fileID: -9031356754636080711, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_down_01
+    sprite: {fileID: 6772563300514001179, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_down_02
+    sprite: {fileID: -7224390542824431395, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_down_03
+    sprite: {fileID: 106895552948989913, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_down_04
+    sprite: {fileID: 1824423193119794693, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_left
+    sprite: {fileID: 2575862842613129701, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_left_01
+    sprite: {fileID: -8347605193504806816, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_left_02
+    sprite: {fileID: -910121113450160882, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_left_03
+    sprite: {fileID: -7818060472720026482, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_left_04
+    sprite: {fileID: -3686979329215652310, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_right
+    sprite: {fileID: -2278256530551225941, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_right_01
+    sprite: {fileID: -3832101206327745649, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_right_02
+    sprite: {fileID: 5094669446440679587, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_right_03
+    sprite: {fileID: -4427873848169637687, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_right_04
+    sprite: {fileID: -6116242464135787072, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_up
+    sprite: {fileID: 8579516638277554509, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_up_01
+    sprite: {fileID: -8113758902887293060, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_up_02
+    sprite: {fileID: 4232211545593392115, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_up_03
+    sprite: {fileID: 8676232100204900070, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: player_walk_up_04
+    sprite: {fileID: 344182749995931264, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: my_farmer
+    sprite: {fileID: 7632060086583786845, guid: 26fa4b87ee2bcbd42b0c9947b270e03b, type: 3}
+  - name: bg_sky_night
+    sprite: {fileID: 1492496435211304649, guid: 136bd7c26fb0d7e4f91ddac11f1661f8, type: 3}
+  - name: night_sky
+    sprite: {fileID: 1492496435211304649, guid: 136bd7c26fb0d7e4f91ddac11f1661f8, type: 3}
+  - name: animal_pig_eat_down
+    sprite: {fileID: -386924010928819481, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_eat_left
+    sprite: {fileID: 470902910429845666, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_eat_right
+    sprite: {fileID: 1678322266764915377, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_eat_up
+    sprite: {fileID: -3594561365869505352, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_funny_down
+    sprite: {fileID: 5909004258687501060, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_funny_left
+    sprite: {fileID: -3177973980305044507, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_funny_right
+    sprite: {fileID: -2999576872400349215, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_funny_up
+    sprite: {fileID: -2751399510973505965, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_idle_down
+    sprite: {fileID: -7996952591234572911, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_idle_left
+    sprite: {fileID: -7543137252053995236, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_idle_right
+    sprite: {fileID: -2120104948145834764, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_idle_up
+    sprite: {fileID: 9104612255158225613, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_rest_down
+    sprite: {fileID: -3112933891460863440, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_rest_left
+    sprite: {fileID: 3623598307816021429, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_rest_right
+    sprite: {fileID: -8604558567616872543, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_rest_up
+    sprite: {fileID: -3076662771819080027, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_sleep_down
+    sprite: {fileID: -5837521588654787197, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_sleep_left
+    sprite: {fileID: -957979111796432448, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_sleep_right
+    sprite: {fileID: -695752780971542582, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_sleep_up
+    sprite: {fileID: -302441395114382155, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_down
+    sprite: {fileID: -5173162113592169270, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_down_01
+    sprite: {fileID: 6497051551238744505, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_down_02
+    sprite: {fileID: 4797789609686452591, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_down_03
+    sprite: {fileID: -4900344833891460719, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_down_04
+    sprite: {fileID: -1499911055355885302, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_left
+    sprite: {fileID: 7606501499185703057, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_left_01
+    sprite: {fileID: -6361084849514804436, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_left_02
+    sprite: {fileID: 6676228047665150700, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_left_03
+    sprite: {fileID: -6142329333756981127, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_left_04
+    sprite: {fileID: -6735856018124795178, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_right
+    sprite: {fileID: 3993940332278240706, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_right_01
+    sprite: {fileID: 9050081185570373883, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_right_02
+    sprite: {fileID: 1883877609050467477, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_right_03
+    sprite: {fileID: -852427013647679796, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_right_04
+    sprite: {fileID: -6235919062899861943, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_up
+    sprite: {fileID: -7495122237789123022, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_up_01
+    sprite: {fileID: 1182157235887939022, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_up_02
+    sprite: {fileID: 3173364695287043289, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_up_03
+    sprite: {fileID: 2275229855139330873, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_pig_walk_up_04
+    sprite: {fileID: 4913057160102985484, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: pig
+    sprite: {fileID: -386924010928819481, guid: d0f28d393b96c634bb5c5e43d84c6862, type: 3}
+  - name: animal_rabbit_eat_down
+    sprite: {fileID: 8072726829632572732, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_eat_left
+    sprite: {fileID: -8415098701549000793, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_eat_right
+    sprite: {fileID: -6741552201747365332, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_eat_up
+    sprite: {fileID: -7077529915849800463, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_funny_down
+    sprite: {fileID: -8908235670505548888, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_funny_left
+    sprite: {fileID: 7924754956924499073, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_funny_right
+    sprite: {fileID: 98461863102323380, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_funny_up
+    sprite: {fileID: -4973055367881523159, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_idle_down
+    sprite: {fileID: -2616092905762611919, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_idle_left
+    sprite: {fileID: -593502919302874174, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_idle_right
+    sprite: {fileID: -623126469581332703, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_idle_up
+    sprite: {fileID: 6602620896799499204, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_rest_down
+    sprite: {fileID: 1155086730764204639, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_rest_left
+    sprite: {fileID: 2204780623931532593, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_rest_right
+    sprite: {fileID: 9088287302675661812, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_rest_up
+    sprite: {fileID: 7359552710948240645, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_sleep_down
+    sprite: {fileID: 8752234971611018255, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_sleep_left
+    sprite: {fileID: -3137935265806427151, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_sleep_right
+    sprite: {fileID: 2100101773354598802, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_sleep_up
+    sprite: {fileID: -4928444304883515271, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_down
+    sprite: {fileID: 5739403834537859620, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_down_01
+    sprite: {fileID: 5501441716921435391, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_down_02
+    sprite: {fileID: -1082877412340722762, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_down_03
+    sprite: {fileID: -192347767686091555, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_down_04
+    sprite: {fileID: -5801484189705914918, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_left
+    sprite: {fileID: 6241368210707523575, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_left_01
+    sprite: {fileID: 8988175867555316930, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_left_02
+    sprite: {fileID: -6760930717797480270, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_left_03
+    sprite: {fileID: 4971660914770300344, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_left_04
+    sprite: {fileID: 4665264888638575289, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_right
+    sprite: {fileID: -5696183545856582521, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_right_01
+    sprite: {fileID: 2690197139728071946, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_right_02
+    sprite: {fileID: -1769124513474018868, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_right_03
+    sprite: {fileID: -5594657256409985577, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_right_04
+    sprite: {fileID: -6380022487853991276, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_up
+    sprite: {fileID: -1210585621341002276, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_up_01
+    sprite: {fileID: 792306491470498809, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_up_02
+    sprite: {fileID: -1287681579653635549, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_up_03
+    sprite: {fileID: -6472307909374604445, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: animal_rabbit_walk_up_04
+    sprite: {fileID: 8052834976188834965, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: rabbit
+    sprite: {fileID: 8072726829632572732, guid: e0e8b9e53f1a79b4cbe17fdcc72d8a8b, type: 3}
+  - name: building_silo_day
+    sprite: {fileID: -6856765891689337153, guid: cd479e91bd609164da09212430ac6e96, type: 3}
+  - name: building_silo_night
+    sprite: {fileID: -5755439185205299206, guid: cd479e91bd609164da09212430ac6e96, type: 3}
+  - name: silo
+    sprite: {fileID: -6856765891689337153, guid: cd479e91bd609164da09212430ac6e96, type: 3}
+  - name: tile_grass_01
+    sprite: {fileID: 1931322083087445121, guid: 86dca82ab35c45143be834e10cb86ec4, type: 3}
+  - name: tile_soil_01
+    sprite: {fileID: -491188477416755626, guid: 86dca82ab35c45143be834e10cb86ec4, type: 3}
+  - name: tile_stone_01
+    sprite: {fileID: -5235844302567955634, guid: 86dca82ab35c45143be834e10cb86ec4, type: 3}
+  - name: tile_water_01
+    sprite: {fileID: 6704345837405459551, guid: 86dca82ab35c45143be834e10cb86ec4, type: 3}
+  - name: tileset
+    sprite: {fileID: 1931322083087445121, guid: 86dca82ab35c45143be834e10cb86ec4, type: 3}
+  - name: building_water_well_day
+    sprite: {fileID: 2913769853806308122, guid: 896da972a405436479fa6c39f6435bd7, type: 3}
+  - name: building_water_well_night
+    sprite: {fileID: -6926875546069961880, guid: 896da972a405436479fa6c39f6435bd7, type: 3}
+  - name: water-well
+    sprite: {fileID: 2913769853806308122, guid: 896da972a405436479fa6c39f6435bd7, type: 3}
+  - name: crop_wheat_growing_01
+    sprite: {fileID: 7943263102140351770, guid: e56cca94b1426704ea68ac5f9cf98dd4, type: 3}
+  - name: crop_wheat_grown_01
+    sprite: {fileID: 3414132174314461456, guid: e56cca94b1426704ea68ac5f9cf98dd4, type: 3}
+  - name: crop_wheat_planted_01
+    sprite: {fileID: -79131215049249838, guid: e56cca94b1426704ea68ac5f9cf98dd4, type: 3}
+  - name: crop_wheat_ready_01
+    sprite: {fileID: 1947410164045456762, guid: e56cca94b1426704ea68ac5f9cf98dd4, type: 3}
+  - name: crop_wheat_sprout_01
+    sprite: {fileID: 4025828530547769987, guid: e56cca94b1426704ea68ac5f9cf98dd4, type: 3}
+  - name: wheat
+    sprite: {fileID: 7943263102140351770, guid: e56cca94b1426704ea68ac5f9cf98dd4, type: 3}
+  - name: building_mill_day
+    sprite: {fileID: -6493935190388500204, guid: 30f2b6c0354d2c04a92ea2bc8925ddc7, type: 3}
+  - name: building_mill_night
+    sprite: {fileID: 2297987705141616861, guid: 30f2b6c0354d2c04a92ea2bc8925ddc7, type: 3}
+  - name: windmill
+    sprite: {fileID: -6493935190388500204, guid: 30f2b6c0354d2c04a92ea2bc8925ddc7, type: 3}
+  - name: building_hutch_day
+    sprite: {fileID: 0}
+  - name: building_hutch_night
+    sprite: {fileID: 0}
+  - name: building_bakery_day
+    sprite: {fileID: 0}
+  - name: building_bakery_night
+    sprite: {fileID: 0}
+  - name: building_dairy_day
+    sprite: {fileID: 0}
+  - name: building_dairy_night
+    sprite: {fileID: 0}
+  - name: building_kitchen_day
+    sprite: {fileID: 0}
+  - name: building_kitchen_night
+    sprite: {fileID: 0}
+  - name: building_market_stall_day
+    sprite: {fileID: 0}
+  - name: building_market_stall_night
+    sprite: {fileID: 0}
+  - name: building_water_wheel_day
+    sprite: {fileID: 0}
+  - name: building_water_wheel_night
+    sprite: {fileID: 0}
+  - name: building_storage_shed_day
+    sprite: {fileID: 0}
+  - name: building_storage_shed_night
+    sprite: {fileID: 0}
+  - name: building_wood_workshop_day
+    sprite: {fileID: 0}
+  - name: building_wood_workshop_night
+    sprite: {fileID: 0}
+  - name: building_fence_day
+    sprite: {fileID: 0}
+  - name: building_fence_night
+    sprite: {fileID: 0}
+  - name: icon_workers
+    sprite: {fileID: 0}
+  - name: icon_orders
+    sprite: {fileID: 0}
+  - name: icon_expansion
+    sprite: {fileID: 0}
+  - name: icon_achievement
+    sprite: {fileID: 0}
+  - name: icon_notifications
+    sprite: {fileID: 0}
+  - name: icon_feed
+    sprite: {fileID: 0}
+  - name: icon_collect
+    sprite: {fileID: 0}
+  - name: icon_move
+    sprite: {fileID: 0}

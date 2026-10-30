@@ -1,0 +1,1161 @@
+fileFormatVersion: 2
+guid: 97dbcf6edd917bf4aa92f688af5b1fed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6168083732550661486
+    second: cow_0
+  - first:
+      213: 8237235514281384070
+    second: animal_cow_idle_down
+  - first:
+      213: 4744941855873889781
+    second: animal_cow_walk_down_01
+  - first:
+      213: 5915513780584202522
+    second: animal_cow_walk_down_02
+  - first:
+      213: -7319756992702558224
+    second: animal_cow_walk_down_03
+  - first:
+      213: 6469252689347399209
+    second: animal_cow_walk_down_04
+  - first:
+      213: 4407802729777048322
+    second: animal_cow_walk_down
+  - first:
+      213: -5000573737904939889
+    second: animal_cow_sleep_down
+  - first:
+      213: -1509971925950808151
+    second: animal_cow_eat_down
+  - first:
+      213: 4395709693905800767
+    second: animal_cow_rest_down
+  - first:
+      213: -4658865015310858778
+    second: animal_cow_funny_down
+  - first:
+      213: 5579356520112479994
+    second: animal_cow_idle_up
+  - first:
+      213: 1639905106551052602
+    second: animal_cow_walk_up_01
+  - first:
+      213: -6558744089777321181
+    second: animal_cow_walk_up_02
+  - first:
+      213: -860170136177176682
+    second: animal_cow_walk_up_03
+  - first:
+      213: -6031800626985632670
+    second: animal_cow_walk_up_04
+  - first:
+      213: -8535492147011925151
+    second: animal_cow_walk_up
+  - first:
+      213: -8144829110970161248
+    second: animal_cow_sleep_up
+  - first:
+      213: 3879598382616031544
+    second: animal_cow_eat_up
+  - first:
+      213: 3329663587955401283
+    second: animal_cow_rest_up
+  - first:
+      213: 408881034367410154
+    second: animal_cow_funny_up
+  - first:
+      213: -4555640113813186733
+    second: animal_cow_idle_left
+  - first:
+      213: 7661923300555923649
+    second: animal_cow_walk_left_01
+  - first:
+      213: 939353995931251535
+    second: animal_cow_walk_left_02
+  - first:
+      213: -5773263623913391596
+    second: animal_cow_walk_left_03
+  - first:
+      213: -6478430037324040324
+    second: animal_cow_walk_left_04
+  - first:
+      213: -5638029143909821889
+    second: animal_cow_walk_left
+  - first:
+      213: 827627970225060258
+    second: animal_cow_sleep_left
+  - first:
+      213: 1580951728893339093
+    second: animal_cow_eat_left
+  - first:
+      213: 7920463521848842279
+    second: animal_cow_rest_left
+  - first:
+      213: 1759718194034611873
+    second: animal_cow_funny_left
+  - first:
+      213: 5317807051774226471
+    second: animal_cow_idle_right
+  - first:
+      213: -6473431430018141801
+    second: animal_cow_walk_right_01
+  - first:
+      213: 7414639298945888668
+    second: animal_cow_walk_right_02
+  - first:
+      213: -408354803986598147
+    second: animal_cow_walk_right_03
+  - first:
+      213: -7617635861745863896
+    second: animal_cow_walk_right_04
+  - first:
+      213: -8925674875899668746
+    second: animal_cow_walk_right
+  - first:
+      213: 7913658778050254898
+    second: animal_cow_sleep_right
+  - first:
+      213: -6677682387444504330
+    second: animal_cow_eat_right
+  - first:
+      213: -2815972736059661127
+    second: animal_cow_rest_right
+  - first:
+      213: 8736692028798214848
+    second: animal_cow_funny_right
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: animal_cow_idle_down
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1052
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68859f7be0a805270800000000000000
+      internalID: 8237235514281384070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_down_01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 902
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f5fe376a7b69d140800000000000000
+      internalID: 4744941855873889781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_down_02
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 902
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1146a31170281250800000000000000
+      internalID: 5915513780584202522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_down_03
+      rect:
+        serializedVersion: 2
+        x: 300.66666
+        y: 902
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ff48cffbcffa6a90800000000000000
+      internalID: -7319756992702558224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_down_04
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 902
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ecace9b0767c950800000000000000
+      internalID: 6469252689347399209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_down
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 902
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20bab5caa39ab2d30800000000000000
+      internalID: 4407802729777048322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_sleep_down
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c5707fda46a9ab0800000000000000
+      internalID: -5000573737904939889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_eat_down
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9afb3e498808b0be0800000000000000
+      internalID: -1509971925950808151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_rest_down
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3e0ff85da2b00d30800000000000000
+      internalID: 4395709693905800767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_funny_down
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 152
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5c6e9c3f2685fb0800000000000000
+      internalID: -4658865015310858778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_idle_up
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afe5090c13bdd6d40800000000000000
+      internalID: 5579356520112479994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_up_01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a39135d710d12c610800000000000000
+      internalID: 1639905106551052602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_up_02
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b41240009aaf4a0800000000000000
+      internalID: -6558744089777321181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_up_03
+      rect:
+        serializedVersion: 2
+        x: 300.66666
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f82ca81df0014f0800000000000000
+      internalID: -860170136177176682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_up_04
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26cfa80a94dba4ca0800000000000000
+      internalID: -6031800626985632670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_up
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 752
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16bc7328d17db8980800000000000000
+      internalID: -8535492147011925151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_sleep_up
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a7ec54a311c7fe80800000000000000
+      internalID: -8144829110970161248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_eat_up
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831320b8c2a17d530800000000000000
+      internalID: 3879598382616031544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_rest_up
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34262a55467553e20800000000000000
+      internalID: 3329663587955401283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_funny_up
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 152
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef1dd86223aca500800000000000000
+      internalID: 408881034367410154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_idle_left
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35715ab047d17c0c0800000000000000
+      internalID: -4555640113813186733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_left_01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c0ace1b5ae945a60800000000000000
+      internalID: 7661923300555923649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_left_02
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4373dd7b71490d00800000000000000
+      internalID: 939353995931251535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_left_03
+      rect:
+        serializedVersion: 2
+        x: 300.66666
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a35f5725f31efa0800000000000000
+      internalID: -5773263623913391596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_left_04
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c77741b843ef716a0800000000000000
+      internalID: -6478430037324040324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_left
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 602
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3294fb7d52b1c1b0800000000000000
+      internalID: -5638029143909821889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_sleep_left
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a9317301435c7b00800000000000000
+      internalID: 827627970225060258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_eat_left
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d52abf983ba0f510800000000000000
+      internalID: 1580951728893339093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_rest_left
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7285d34db932bed60800000000000000
+      internalID: 7920463521848842279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_funny_left
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 152
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a69934cf56cb6810800000000000000
+      internalID: 1759718194034611873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_idle_right
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 720f111b655acc940800000000000000
+      internalID: 5317807051774226471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_right_01
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7917bef7960c926a0800000000000000
+      internalID: -6473431430018141801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_right_02
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c91325f682716e660800000000000000
+      internalID: 7414639298945888668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_right_03
+      rect:
+        serializedVersion: 2
+        x: 300.66666
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6fd06287b355af0800000000000000
+      internalID: -408354803986598147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_right_04
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8237c503b88b84690800000000000000
+      internalID: -7617635861745863896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_walk_right
+      rect:
+        serializedVersion: 2
+        x: 151.33333
+        y: 452
+        width: 145.33333
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f61f599df1a12480800000000000000
+      internalID: -8925674875899668746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_sleep_right
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2385653fab6f2dd60800000000000000
+      internalID: 7913658778050254898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_eat_right
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8ec7d9f3b1453a0800000000000000
+      internalID: -6677682387444504330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_rest_right
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 302
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4aaf957b7abe8d0800000000000000
+      internalID: -2815972736059661127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: animal_cow_funny_right
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 152
+        width: 220
+        height: 146
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c221887c17fe3970800000000000000
+      internalID: 8736692028798214848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      animal_cow_eat_down: -1509971925950808151
+      animal_cow_eat_left: 1580951728893339093
+      animal_cow_eat_right: -6677682387444504330
+      animal_cow_eat_up: 3879598382616031544
+      animal_cow_funny_down: -4658865015310858778
+      animal_cow_funny_left: 1759718194034611873
+      animal_cow_funny_right: 8736692028798214848
+      animal_cow_funny_up: 408881034367410154
+      animal_cow_idle_down: 8237235514281384070
+      animal_cow_idle_left: -4555640113813186733
+      animal_cow_idle_right: 5317807051774226471
+      animal_cow_idle_up: 5579356520112479994
+      animal_cow_rest_down: 4395709693905800767
+      animal_cow_rest_left: 7920463521848842279
+      animal_cow_rest_right: -2815972736059661127
+      animal_cow_rest_up: 3329663587955401283
+      animal_cow_sleep_down: -5000573737904939889
+      animal_cow_sleep_left: 827627970225060258
+      animal_cow_sleep_right: 7913658778050254898
+      animal_cow_sleep_up: -8144829110970161248
+      animal_cow_walk_down: 4407802729777048322
+      animal_cow_walk_down_01: 4744941855873889781
+      animal_cow_walk_down_02: 5915513780584202522
+      animal_cow_walk_down_03: -7319756992702558224
+      animal_cow_walk_down_04: 6469252689347399209
+      animal_cow_walk_left: -5638029143909821889
+      animal_cow_walk_left_01: 7661923300555923649
+      animal_cow_walk_left_02: 939353995931251535
+      animal_cow_walk_left_03: -5773263623913391596
+      animal_cow_walk_left_04: -6478430037324040324
+      animal_cow_walk_right: -8925674875899668746
+      animal_cow_walk_right_01: -6473431430018141801
+      animal_cow_walk_right_02: 7414639298945888668
+      animal_cow_walk_right_03: -408354803986598147
+      animal_cow_walk_right_04: -7617635861745863896
+      animal_cow_walk_up: -8535492147011925151
+      animal_cow_walk_up_01: 1639905106551052602
+      animal_cow_walk_up_02: -6558744089777321181
+      animal_cow_walk_up_03: -860170136177176682
+      animal_cow_walk_up_04: -6031800626985632670
+      cow_0: 6168083732550661486
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

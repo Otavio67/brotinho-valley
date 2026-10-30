@@ -1,0 +1,37 @@
+#key	pt-BR	en
+game_name	Brotinho Valley	Brotinho Valley
+play	Jogar	Play
+continue	Continuar	Continue
+coins	Moedas	Coins
+gems	Gemas	Gems
+day	Dia	Day
+crop_lettuce	Alface	Lettuce
+crop_carrot	Cenoura	Carrot
+crop_wheat	Trigo	Wheat
+crop_apple	Macieira	Apple tree
+region_riverside	À beira do rio	Riverside
+region_hillside	Encosta	Hillside
+region_forest	Floresta	Forest
+region_meadow	Pradaria	Meadow
+trait_riverside	Trigo e alface crescem 15% mais rápido. Roda d'água disponível.	Wheat and lettuce grow 15% faster. Water wheel available.
+trait_hillside	Maçãs valem 20% mais. Animais produzem 10% mais. Cercas baratas.	Apples sell for 20% more. Animals yield 10% more. Cheaper fences.
+trait_forest	Macieiras grátis. Cenouras crescem 15% mais devagar. Serraria antecipada.	Free apple trees. Carrots grow 15% slower. Early wood workshop.
+trait_meadow	Abrigos custam 25% menos. Galinhas produzem 10% mais ovos.	Animal housing costs 25% less. Chickens yield 10% more eggs.
+weather_sunny	Ensolarado	Sunny
+weather_cloudy	Nublado	Cloudy
+weather_rain	Chuva	Rain
+weather_storm	Tempestade	Storm
+weather_dew	Orvalho	Dew
+plant	Plantar	Plant
+water	Regar	Water
+harvest	Colher	Harvest
+harvested	Colheita feita!	Harvested!
+invalid_placement	Escolha um espaço vazio e desbloqueado.	Choose an empty unlocked tile.
+locked	Aumente seu nível para desbloquear.	Level up to unlock.
+no_seeds	Você precisa de sementes.	You need seeds.
+not_ready	Ainda está crescendo.	Still growing.
+storm_wait	Espere a tempestade passar.	Wait for the storm to pass.
+storage_full	Armazém cheio para este item.	Storage is full for this item.
+level_up	Novo nível!	Level up!
+empty_tile	Um cantinho para crescer.	A little room to grow.
+orders	Pedidos dos vizinhos	Villager orders

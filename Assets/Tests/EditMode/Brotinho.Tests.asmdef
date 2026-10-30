@@ -1,0 +1,6 @@
+{
+  "name": "Brotinho.Tests",
+  "references": ["Brotinho.Runtime"],
+  "includePlatforms": ["Editor"],
+  "optionalUnityReferences": ["TestAssemblies"]
+}
